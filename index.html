@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Samriddha Saha — Business Analyst / Data Analyst</title>
 <meta name="description" content="Portfolio of Samriddha Saha, Business Analyst & Data Analyst — BI dashboards, forecasting models, data warehousing.">
@@ -235,8 +236,8 @@
   .foot-links a:hover{ color:var(--accent); }
   .foot-small{ font-family:var(--mono); font-size:0.8rem; color:var(--muted); }
 
-  .reveal{ opacity:0; transform:translateY(24px); transition:opacity 0.6s ease, transform 0.6s ease; }
-  .reveal.visible{ opacity:1; transform:translateY(0); }
+  .js .reveal{ opacity:0; transform:translateY(24px); transition:opacity 0.6s ease, transform 0.6s ease; }
+  .js .reveal.visible{ opacity:1; transform:translateY(0); }
 </style>
 </head>
 <body>
@@ -517,10 +518,12 @@
   toggle.addEventListener('click', () => {
     const isOpen = navList.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen);
+    toggle.textContent = isOpen ? '✕' : '☰';
   });
   navList.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     navList.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = '☰';
   }));
 
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
