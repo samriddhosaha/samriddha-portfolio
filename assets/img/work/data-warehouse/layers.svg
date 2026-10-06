@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="'Courier New',monospace">
+<title id="t">Medallion architecture: CSV sources to bronze, silver and gold layers</title>
+<desc id="d">Six CSV files (three CRM, three ERP) are loaded raw into a bronze layer in SQL Server, cleansed into a silver layer, and modeled as a gold star schema of dim_customers, dim_products and fact_sales.</desc>
+<rect width="800" height="420" fill="#f5f2ec"/>
+<g fill="none" stroke="#111" stroke-width="3">
+<rect x="24" y="110" width="150" height="200" fill="#ece7dc"/>
+<rect x="224" y="110" width="150" height="200"/>
+<rect x="424" y="110" width="150" height="200"/>
+<rect x="624" y="110" width="152" height="200" fill="#111"/>
+<path d="M174 210h50M374 210h50M574 210h50"/>
+</g>
+<g fill="#111"><path d="M224 210l-12-8v16zM424 210l-12-8v16zM624 210l-12-8v16z"/></g>
+<g font-size="15" fill="#111" text-anchor="middle">
+<text x="99" y="60" font-size="13" fill="#1f4a3d">SOURCES</text>
+<text x="299" y="60" font-size="13" fill="#1f4a3d">LAYER 1</text>
+<text x="499" y="60" font-size="13" fill="#1f4a3d">LAYER 2</text>
+<text x="700" y="60" font-size="13" fill="#1f4a3d">LAYER 3</text>
+<text x="99" y="170" font-weight="700" font-size="20">6 CSV files</text>
+<text x="99" y="205">CRM x 3</text><text x="99" y="230">ERP x 3</text>
+<text x="299" y="170" font-weight="700" font-size="22">Bronze</text>
+<text x="299" y="205">raw, as-is</text><text x="299" y="230">SQL Server</text>
+<text x="499" y="170" font-weight="700" font-size="22">Silver</text>
+<text x="499" y="205">cleansed</text><text x="499" y="230">standardized</text>
+<text x="700" y="170" font-weight="700" font-size="22" fill="#f5f2ec">Gold</text>
+<text x="700" y="205" fill="#f5f2ec">star schema</text>
+</g>
+<g font-size="12" fill="#f5f2ec" text-anchor="middle"><text x="700" y="248">dim_customers</text><text x="700" y="268">dim_products</text><text x="700" y="288">fact_sales</text></g>
+<text x="24" y="380" font-size="12" fill="#5b5648">Redrawn from the project README. ETL runs as SQL stored procedures.</text>
+<rect x="24" y="395" width="752" height="6" fill="#c1401f"/>
+</svg>

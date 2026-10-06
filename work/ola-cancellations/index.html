@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ola ride cancellations: a Power BI analysis | Samriddha Saha</title>
+<meta name="description" content="Five-page Power BI report on July 2024 Ola bookings: a 28% cancellation rate across 103,024 bookings, and the reasons behind it.">
+<link rel="canonical" href="https://samriddha-portfolio.vercel.app/work/ola-cancellations/">
+<meta name="theme-color" content="#f5f2ec">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Samriddha Saha">
+<meta property="og:title" content="Ola ride cancellations: a Power BI analysis">
+<meta property="og:description" content="Five-page Power BI report on July 2024 Ola bookings: a 28% cancellation rate across 103,024 bookings, and the reasons behind it.">
+<meta property="og:url" content="https://samriddha-portfolio.vercel.app/work/ola-cancellations/">
+<meta property="og:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ola ride cancellations: a Power BI analysis">
+<meta name="twitter:description" content="Five-page Power BI report on July 2024 Ola bookings: a 28% cancellation rate across 103,024 bookings, and the reasons behind it.">
+<meta name="twitter:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/fraunces-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<noscript><link rel="stylesheet" href="/assets/css/nojs.css"></noscript>
+<script defer src="/assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 8 9-8"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM5 15V4h11"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+</svg>
+<header class="site">
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="mark">SAMRIDDHA<span>.</span></a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Menu">
+      <svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <ul id="navList">
+      <li><a class="navlink" href="/#work">Work</a></li>
+      <li><a class="navlink" href="/#experience">Experience</a></li>
+      <li><a class="navlink" href="/#toolkit">Toolkit</a></li>
+      <li><a class="navlink" href="/#about">About</a></li>
+      <li><a class="navlink" href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <div class="case-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="/#work">&larr; Selected work</a></p>
+      <h1>Ola ride cancellations</h1>
+      <p class="lede">A Power BI report on one month of ride bookings, built to show why rides get cancelled.</p>
+      
+      <dl class="facts"><div><dt>Type</dt><dd>Personal project</dd></div><div><dt>Tools</dt><dd>SQL, Power BI</dd></div><div><dt>Data</dt><dd>Ola bookings, July 2024</dd></div><div><dt>Built</dt><dd>Jan 2025</dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap prose">
+<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>The question</h2><div class="body"><p>Why do Ola rides get cancelled, and where could a team act to bring the cancellation rate down by 10%?</p></div></section>
+<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>The data</h2><div class="body"><p>A dataset of Ola bookings for July 2024 (1 to 31 July). I cleaned and processed data from several sources before analysis.</p>
+<!-- TODO(owner): name the dataset source and say whether this followed a course (NEEDS_INPUT.md #8) --></div></section>
+<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>The method</h2><div class="body"><p>SQL queries produced the figures, and a five-page Power BI report presents them: Overall, Vehicle Type, Revenue, Cancellation and Ratings.</p></div></section>
+<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>What I found</h2><div class="body"><p>Of 103,024 bookings, 63,967 (62.1%) were completed. A further 28,933 were cancelled, a cancellation rate of <strong>28.08%</strong>: 17.9% of bookings cancelled by the driver and 10.2% by the customer. Another 9.8% ended with no driver found.</p>
+<figure><div class="fig"><img src="/assets/img/work/ola-cancellations/cancellation-dashboard.webp" width="1262" height="705" loading="lazy" alt="Power BI cancellation page for July 2024: 103,024 total bookings, 63,967 successful, 28,933 cancelled, a cancellation rate of 28.08, and pie charts of cancellation reasons given by customers and by drivers."></div><figcaption>The Cancellation page of the Power BI report.</figcaption></figure>
+<ul><li><strong>Customers cancel mostly because of the driver.</strong> "Driver is not moving towards pickup" (30.2%) and "driver asked to cancel" (25.4%) together account for 55.7% of customer cancellations.</li>
+<li><strong>Drivers cancel mostly for their own reasons.</strong> Personal and car-related issues are 35.5% of driver cancellations; customer-related issues are 29.4%.</li></ul></div></section>
+<section aria-labelledby="what-id-do-next"><h2 id="what-id-do-next"><span class="section-num">05</span>What I'd do next</h2><div class="body"><p>The 10% reduction is a target I set, not a forecast, and the project does not estimate how much a given change would move it. The next step is to size the opportunity from the dashboard's own numbers.</p>
+<p>As arithmetic only: about 10,500 bookings were cancelled by customers, and 55.7% of those (about 5,850) cite driver behaviour at pickup. Halving that group would remove about 2,900 cancellations and move the rate from 28.1% to about 25.3%, a 10% relative drop. Whether such a change is achievable is a question for the operations team and the data cannot answer it.</p>
+<p>I would also check how the cancellation definition treats the "driver not found" bookings, which sit outside the 28.08%.</p></div></section>
+<section aria-labelledby="links"><h2 id="links"><span class="section-num">06</span>Links</h2><div class="body"><ul><li><a href="https://app.powerbi.com/links/5hiYQrtHJt?ctid=36da45f1-dd2c-4d1f-af13-5abe46b99921&amp;pbi_source=linkShare" target="_blank" rel="noopener">Live Power BI dashboard <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li>
+<li><a href="https://github.com/samriddhosaha/PowerBI-Projects/tree/main/OLA-DataAnalysis" target="_blank" rel="noopener">Project folder and screenshots on GitHub <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li></ul>
+<p>Last updated 6 Oct 2026.</p></div></section>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot-grid">
+    <div><a class="mark" href="/">SAMRIDDHA SAHA</a><div class="foot-small">Senior Business Analyst</div></div>
+    <ul class="foot-links">
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/samriddha-saha-12375a1a0/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
+      <li><a href="https://github.com/samriddhosaha/" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <div class="foot-small">© <span data-year>2026</span> Samriddha Saha</div>
+  </div>
+</footer>
+</body>
+</html>

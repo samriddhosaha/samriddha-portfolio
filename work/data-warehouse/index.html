@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data warehouse: ERP and CRM data in a star schema | Samriddha Saha</title>
+<meta name="description" content="A medallion-architecture warehouse in SQL Server: six ERP and CRM files, bronze to gold layers, ETL in stored procedures, a star schema.">
+<link rel="canonical" href="https://samriddha-portfolio.vercel.app/work/data-warehouse/">
+<meta name="theme-color" content="#f5f2ec">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Samriddha Saha">
+<meta property="og:title" content="Data warehouse: ERP and CRM data in a star schema">
+<meta property="og:description" content="A medallion-architecture warehouse in SQL Server: six ERP and CRM files, bronze to gold layers, ETL in stored procedures, a star schema.">
+<meta property="og:url" content="https://samriddha-portfolio.vercel.app/work/data-warehouse/">
+<meta property="og:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data warehouse: ERP and CRM data in a star schema">
+<meta name="twitter:description" content="A medallion-architecture warehouse in SQL Server: six ERP and CRM files, bronze to gold layers, ETL in stored procedures, a star schema.">
+<meta name="twitter:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/fraunces-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<noscript><link rel="stylesheet" href="/assets/css/nojs.css"></noscript>
+<script defer src="/assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 8 9-8"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM5 15V4h11"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+</svg>
+<header class="site">
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="mark">SAMRIDDHA<span>.</span></a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Menu">
+      <svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <ul id="navList">
+      <li><a class="navlink" href="/#work">Work</a></li>
+      <li><a class="navlink" href="/#experience">Experience</a></li>
+      <li><a class="navlink" href="/#toolkit">Toolkit</a></li>
+      <li><a class="navlink" href="/#about">About</a></li>
+      <li><a class="navlink" href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <div class="case-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="/#work">&larr; Selected work</a></p>
+      <h1>Data warehouse: ERP and CRM to a star schema</h1>
+      <p class="lede">A three-layer SQL Server warehouse that turns raw ERP and CRM exports into a documented star schema.</p>
+      
+      <dl class="facts"><div><dt>Type</dt><dd>Personal project</dd></div><div><dt>Tools</dt><dd>SQL Server, T-SQL, ETL</dd></div><div><dt>Data</dt><dd>6 CSV files (CRM and ERP)</dd></div><div><dt>Built</dt><dd>Feb 2025</dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap prose">
+<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>The question</h2><div class="body"><p>Two source systems, a CRM and an ERP, export raw files in different shapes. How do you combine them into one clean model that analysts can query?</p></div></section>
+<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>The data</h2><div class="body"><p>Six CSV files: three from the CRM (customer info, product info, sales details) and three from the ERP (customer, location and product-category tables). The scope is the latest data only; history is not tracked.</p></div></section>
+<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>The method</h2><div class="body"><p>A medallion architecture in SQL Server, built in three layers.</p>
+<figure><div class="fig"><img src="/assets/img/work/data-warehouse/layers.svg" width="800" height="420" loading="lazy" alt="Diagram: six CSV files flow into a bronze layer, then silver, then a gold star schema."></div><figcaption>The three layers, redrawn from the project README.</figcaption></figure>
+<ul><li><strong>Bronze</strong>: raw files loaded as they arrive, by a stored procedure.</li>
+<li><strong>Silver</strong>: cleansing and standardisation of both sources, also by stored procedure.</li>
+<li><strong>Gold</strong>: business-ready views in a star schema: <code>dim_customers</code>, <code>dim_products</code> and <code>fact_sales</code>.</li></ul>
+<p>The repo also holds a column-level data catalog for the gold layer and a set of naming conventions.</p></div></section>
+<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>What I found</h2><div class="body"><p>This project is about building the model, not about a business finding. What it delivers is a single place where CRM and ERP data meet: one customer dimension, one product dimension and one sales fact table, documented well enough for someone else to query.</p>
+<!-- TODO(owner): add what you changed or extended, and any data-quality issues you found and fixed (NEEDS_INPUT.md #8) --></div></section>
+<section aria-labelledby="what-id-do-next"><h2 id="what-id-do-next"><span class="section-num">05</span>What I'd do next</h2><div class="body"><ul><li>Add automated checks that row counts and totals reconcile between layers.</li><li>Keep history, for example slowly changing customer attributes, rather than only the latest snapshot.</li><li>Build a Power BI report on the gold layer for customer behaviour, product performance and sales trends.</li></ul></div></section>
+<section aria-labelledby="links"><h2 id="links"><span class="section-num">06</span>Links</h2><div class="body"><ul><li><a href="https://github.com/samriddhosaha/SQL-PortfolioProjects/tree/main/Data-Warehouse-Project" target="_blank" rel="noopener">Scripts, data catalog and docs on GitHub <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li></ul>
+<p>Last updated 6 Oct 2026.</p></div></section>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot-grid">
+    <div><a class="mark" href="/">SAMRIDDHA SAHA</a><div class="foot-small">Senior Business Analyst</div></div>
+    <ul class="foot-links">
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/samriddha-saha-12375a1a0/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
+      <li><a href="https://github.com/samriddhosaha/" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <div class="foot-small">© <span data-year>2026</span> Samriddha Saha</div>
+  </div>
+</footer>
+</body>
+</html>

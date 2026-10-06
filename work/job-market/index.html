@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data job market analysis, India | Samriddha Saha</title>
+<meta name="description" content="pandas and Matplotlib analysis of a public 2023 job-postings dataset: in-demand data skills in India, trends over the year and skills versus pay.">
+<link rel="canonical" href="https://samriddha-portfolio.vercel.app/work/job-market/">
+<meta name="theme-color" content="#f5f2ec">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Samriddha Saha">
+<meta property="og:title" content="Data job market analysis, India">
+<meta property="og:description" content="pandas and Matplotlib analysis of a public 2023 job-postings dataset: in-demand data skills in India, trends over the year and skills versus pay.">
+<meta property="og:url" content="https://samriddha-portfolio.vercel.app/work/job-market/">
+<meta property="og:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data job market analysis, India">
+<meta name="twitter:description" content="pandas and Matplotlib analysis of a public 2023 job-postings dataset: in-demand data skills in India, trends over the year and skills versus pay.">
+<meta name="twitter:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/fraunces-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<noscript><link rel="stylesheet" href="/assets/css/nojs.css"></noscript>
+<script defer src="/assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 8 9-8"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM5 15V4h11"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+</svg>
+<header class="site">
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="mark">SAMRIDDHA<span>.</span></a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Menu">
+      <svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <ul id="navList">
+      <li><a class="navlink" href="/#work">Work</a></li>
+      <li><a class="navlink" href="/#experience">Experience</a></li>
+      <li><a class="navlink" href="/#toolkit">Toolkit</a></li>
+      <li><a class="navlink" href="/#about">About</a></li>
+      <li><a class="navlink" href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <div class="case-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="/#work">&larr; Selected work</a></p>
+      <h1>Data job market analysis, India</h1>
+      <p class="lede">Which skills data roles ask for in India, how demand moves, and where demand and pay line up.</p>
+      
+      <dl class="facts"><div><dt>Type</dt><dd>Personal project</dd></div><div><dt>Tools</dt><dd>Python, pandas, Matplotlib, Seaborn, Jupyter</dd></div><div><dt>Data</dt><dd>data_jobs (Luke Barousse), India</dd></div><div><dt>Built</dt><dd>Nov 2024</dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap prose">
+<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>The question</h2><div class="body"><p>Which skills do data roles ask for in India, how is that demand changing, and which skills combine strong demand with higher pay?</p><p>The project answers four questions: the most requested skills for the three most common data roles; how skill demand trends for Data Analysts; how jobs and skills pay; and which skills are the best to learn.</p></div></section>
+<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>The data</h2><div class="body"><p>The <code>data_jobs</code> dataset from Luke Barousse's Python course: job postings with titles, locations, salaries and skills. I narrowed it to postings in India.</p>
+<!-- TODO(owner): say what else you changed or extended beyond the course material (NEEDS_INPUT.md #8) --></div></section>
+<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>The method</h2><div class="body"><p>pandas to clean dates and skill lists, filter to India and group by role, skill and month; Matplotlib and Seaborn for the charts. Five Jupyter notebooks walk through the steps, from an exploratory intro to the optimal-skills view.</p></div></section>
+<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>What I found</h2><div class="body"><ul><li><strong>SQL leads.</strong> It is the most requested skill for Data Analysts and Data Scientists (in over half of postings), and appears in 68% of Data Engineer postings. Python matters most for Data Scientists (70%) and Data Engineers (61%).</li>
+<li><strong>Excel demand rose through 2023.</strong> From around May it climbed past Python and Tableau by year end, while SQL slipped slightly.</li>
+<li><strong>Demand and pay are different lists.</strong> Specialised skills such as PostgreSQL, PySpark and Linux went with higher pay; Power BI, Spark and Tableau were among the most requested.</li></ul>
+<figure class="native"><div class="fig"><img src="/assets/img/work/job-market/skill-demand.webp" width="623" height="472" loading="lazy" alt="Bar charts of the top five skills requested for the three most common data roles in Indian job postings."></div><figcaption>Share of postings requesting each skill, by role.</figcaption></figure>
+<figure class="native"><div class="fig"><img src="/assets/img/work/job-market/skill-trend.webp" width="621" height="453" loading="lazy" alt="Line chart of monthly demand for the top five data analyst skills in India during 2023."></div><figcaption>Monthly demand for the top Data Analyst skills, 2023.</figcaption></figure>
+<figure class="native"><div class="fig"><img src="/assets/img/work/job-market/optimal-skills.webp" width="591" height="457" loading="lazy" alt="Scatter plot of skills by share of postings and median salary for data analysts in India."></div><figcaption>Skills by demand and median pay.</figcaption></figure></div></section>
+<section aria-labelledby="what-id-do-next"><h2 id="what-id-do-next"><span class="section-num">05</span>What I'd do next</h2><div class="body"><ul><li>Report how many postings sit behind every salary figure; pay data in job ads is often sparse, so small groups should be flagged.</li><li>Compare India with other markets using the same code.</li><li>Look at skill combinations, not single skills, since postings ask for sets.</li></ul></div></section>
+<section aria-labelledby="links"><h2 id="links"><span class="section-num">06</span>Links</h2><div class="body"><ul><li><a href="https://github.com/samriddhosaha/Python-Projects/tree/main/Data-Job-Market-Analysis" target="_blank" rel="noopener">Notebooks, charts and write-up on GitHub <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li>
+<li><a href="https://lukebarousse.com/python" target="_blank" rel="noopener">Luke Barousse's Python course (data source) <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li></ul>
+<p>Last updated 6 Oct 2026.</p></div></section>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot-grid">
+    <div><a class="mark" href="/">SAMRIDDHA SAHA</a><div class="foot-small">Senior Business Analyst</div></div>
+    <ul class="foot-links">
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/samriddha-saha-12375a1a0/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
+      <li><a href="https://github.com/samriddhosaha/" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <div class="foot-small">© <span data-year>2026</span> Samriddha Saha</div>
+  </div>
+</footer>
+</body>
+</html>

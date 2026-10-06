@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event ticket demand and pricing (synthetic case study) | Samriddha Saha</title>
+<meta name="description" content="Synthetic, illustrative case study: demand segmentation, price elasticity and a held-out forecast for a fictional 16-match event. Not client work.">
+<link rel="canonical" href="https://samriddha-portfolio.vercel.app/work/event-pricing/">
+<meta name="theme-color" content="#f5f2ec">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Samriddha Saha">
+<meta property="og:title" content="Event ticket demand and pricing (synthetic case study)">
+<meta property="og:description" content="Synthetic, illustrative case study: demand segmentation, price elasticity and a held-out forecast for a fictional 16-match event. Not client work.">
+<meta property="og:url" content="https://samriddha-portfolio.vercel.app/work/event-pricing/">
+<meta property="og:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Event ticket demand and pricing (synthetic case study)">
+<meta name="twitter:description" content="Synthetic, illustrative case study: demand segmentation, price elasticity and a held-out forecast for a fictional 16-match event. Not client work.">
+<meta name="twitter:image" content="https://samriddha-portfolio.vercel.app/assets/img/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/fraunces-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<noscript><link rel="stylesheet" href="/assets/css/nojs.css"></noscript>
+<script defer src="/assets/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 6l9 8 9-8"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9zM5 15V4h11"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v13M6 11l6 6 6-6M4 21h16"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+</svg>
+<header class="site">
+  <nav class="nav" aria-label="Main">
+    <a href="/" class="mark">SAMRIDDHA<span>.</span></a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Menu">
+      <svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+    <ul id="navList">
+      <li><a class="navlink" href="/#work">Work</a></li>
+      <li><a class="navlink" href="/#experience">Experience</a></li>
+      <li><a class="navlink" href="/#toolkit">Toolkit</a></li>
+      <li><a class="navlink" href="/#about">About</a></li>
+      <li><a class="navlink" href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main">
+  <div class="case-hero">
+    <div class="wrap">
+      <p class="crumb"><a href="/#work">&larr; Selected work</a></p>
+      <h1>Event ticket demand and pricing</h1>
+      <p class="lede">A fictional 16-match event, used to show how I segment demand, estimate price response and test a forecast.</p>
+      <p class="notice"><strong>Synthetic data. Illustrative. Not client work.</strong> Every number on this page comes from a script that invents the data. It does not describe any real event, client, price or method.</p>
+      <dl class="facts"><div><dt>Type</dt><dd>Synthetic case study</dd></div><div><dt>Tools</dt><dd>Python, pandas, NumPy, Matplotlib</dd></div><div><dt>Data</dt><dd>Generated, seeded (42)</dd></div><div><dt>Built</dt><dd>Oct 2026</dd></div></dl>
+    </div>
+  </div>
+  <div class="wrap prose">
+<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>The question</h2><div class="body"><p>An organiser sells tickets to a 16-match event. How do demand and revenue respond to price for different kinds of buyer, and how well can a simple model forecast matches it has not seen?</p></div></section>
+<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>The data</h2><div class="body"><p>There is no real data here. <code>generate_data.py</code> invents 432 rows (16 matches × 3 seat categories × 3 buyer segments × 3 purchase windows) with a fixed random seed, so anyone can regenerate the same file. It sold 141,845 tickets in total.</p>
+<ul><li><strong>Match tier</strong> A, B or C, a stand-in for how much people want to go.</li><li><strong>Buyer segment</strong>: Local, Domestic travel, International.</li><li><strong>Purchase window</strong>: Early (over 60 days out), Mid (15 to 60), Late (under 15).</li><li><strong>Capacity</strong>: seats are finite, and 8 match and category combinations sold out.</li></ul>
+<p>Because I wrote the generator, I know the true price elasticity of each segment (Local −1.6, Domestic −1.1, International −0.6). The model never sees those numbers. That lets me check whether the method recovers them, which real data would never allow.</p></div></section>
+<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>The method</h2><div class="body"><ol><li><strong>Segment demand</strong> by tier, buyer segment and purchase window, using matches 1 to 12.</li>
+<li><strong>Estimate price response</strong> with one log-log regression per segment: log of tickets sold against log of price, controlling for tier, seat category and window. The price coefficient is the elasticity: a 1% price rise changes tickets sold by that many percent. Sold-out groups are left out of the fit because their sales are capped by seats, not by demand.</li>
+<li><strong>Forecast the held-out matches</strong> (13 to 16) using the prices actually charged, then cap each match and category at its seats.</li>
+<li><strong>Scenarios</strong>: Low and High scale demand by −15% and +15%. That range is my assumption, not something estimated.</li>
+<li><strong>Error</strong>: WAPE (weighted absolute percentage error), the sum of absolute errors divided by the sum of actuals. I compare it with a naive forecast that uses the training average for each segment, window and category.</li>
+<li><strong>Sensitivity</strong>: change prices on the held-out matches and see what the model says happens to revenue.</li></ol></div></section>
+<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>What I found</h2><div class="body"><h3>Where demand comes from</h3>
+<p>Local buyers account for 52% of tickets in the training matches, domestic travellers 30% and international buyers 19%. In every tier and segment the middle window sells the most.</p>
+<figure><div class="fig"><img src="/assets/img/work/event-pricing/chart-demand-mix.svg" width="700" height="360" loading="lazy" alt="Stacked bars of tickets sold by buyer segment, split into early, mid and late purchase windows. Local is largest, international smallest, and mid is the largest window in each."></div><figcaption>Tickets sold by segment and purchase window, matches 1 to 12 (synthetic).</figcaption></figure>
+<h3>Price response</h3>
+<p>The method recovers the elasticities I built in, within its uncertainty. The international estimate is the least precise: its interval is wide, but it still contains the true value.</p>
+<figure><div class="fig"><img src="/assets/img/work/event-pricing/chart-elasticity.svg" width="700" height="320" loading="lazy" alt="Dot plot of estimated price elasticity with 95 percent intervals for three segments, next to the true values used to generate the data."></div><figcaption>Estimated versus true elasticity by segment (synthetic).</figcaption></figure>
+<div class="table-wrap" role="region" aria-label="Elasticity by segment (synthetic)" tabindex="0"><table><caption>Elasticity by segment (synthetic)</caption><thead><tr><th scope="col">Segment</th><th scope="col">Estimate</th><th scope="col">95% interval</th><th scope="col">Used to generate data</th></tr></thead><tbody><tr><td>Local</td><td>−1.56</td><td>−1.77 to −1.34</td><td>−1.6</td></tr><tr><td>Domestic travel</td><td>−1.15</td><td>−1.39 to −0.90</td><td>−1.1</td></tr><tr><td>International</td><td>−0.39</td><td>−0.73 to −0.04</td><td>−0.6</td></tr></tbody></table></div>
+<h3>Forecast on matches the model never saw</h3>
+<p>Cell-level WAPE on matches 13 to 16 is <strong>8.4%</strong>, against 34.4% for the naive average. Revenue per match is off by 0.9% in aggregate, and total tickets are +0.5% versus actual. Actual revenue fell inside the Low to High band in 4 of 4 matches.</p>
+<figure><div class="fig"><img src="/assets/img/work/event-pricing/chart-forecast.svg" width="750" height="380" loading="lazy" alt="Four held-out matches. For each, a grey band shows the low to high scenario, a black tick the base forecast and a red dot the actual revenue. Actuals sit close to the base."></div><figcaption>Held-out matches: scenario band, base forecast and actual revenue (synthetic).</figcaption></figure>
+<div class="table-wrap" role="region" aria-label="Revenue forecast by held-out match (synthetic)" tabindex="0"><table><caption>Revenue forecast by held-out match (synthetic)</caption><thead><tr><th scope="col">Match</th><th scope="col">Low</th><th scope="col">Base</th><th scope="col">High</th><th scope="col">Actual</th><th scope="col">Inside band</th></tr></thead><tbody><tr><td>Match 13 (tier B)</td><td>$1.29M</td><td>$1.52M</td><td>$1.75M</td><td>$1.50M</td><td>yes</td></tr><tr><td>Match 14 (tier A)</td><td>$3.14M</td><td>$3.42M</td><td>$3.51M</td><td>$3.40M</td><td>yes</td></tr><tr><td>Match 15 (tier C)</td><td>$0.53M</td><td>$0.63M</td><td>$0.72M</td><td>$0.63M</td><td>yes</td></tr><tr><td>Match 16 (tier A)</td><td>$3.05M</td><td>$3.45M</td><td>$3.60M</td><td>$3.42M</td><td>yes</td></tr></tbody></table></div>
+<div class="callout"><p><strong>Read these accuracy numbers with suspicion.</strong> The model has the same shape as the process that generated the data, so it should do well. On real data I would expect a far larger error.</p></div>
+<h3>What a price change would do</h3>
+<div class="table-wrap" role="region" aria-label="Revenue change on the held-out matches (synthetic)" tabindex="0"><table><caption>Revenue change on the held-out matches (synthetic)</caption><thead><tr><th scope="col">Price change</th><th scope="col">Elasticity ×0.7</th><th scope="col">As estimated</th><th scope="col">Elasticity ×1.3</th></tr></thead><tbody><tr><td>−10%</td><td>−6.3%</td><td>−4.8%</td><td>−3.4%</td></tr><tr><td>−5%</td><td>−2.9%</td><td>−2.2%</td><td>−1.4%</td></tr><tr><td>+0%</td><td>+0.0%</td><td>+0.0%</td><td>+0.0%</td></tr><tr><td>+5%</td><td>+2.6%</td><td>+1.4%</td><td>+0.3%</td></tr><tr><td>+10%</td><td>+4.8%</td><td>+2.0%</td><td>−0.8%</td></tr></tbody></table></div>
+<p>With the estimated elasticities, a 5% price rise lifts revenue by +1.4% and a 10% rise by +2.0%. If demand were 30% more price-sensitive than estimated, the 10% rise would lose money. The answer depends on a number I can only estimate, which is why the interval matters.</p>
+<div class="table-wrap" role="region" aria-label="Revenue change from a 5% price rise, by segment (synthetic)" tabindex="0"><table><caption>Revenue change from a 5% price rise, by segment (synthetic)</caption><thead><tr><th scope="col">Segment</th><th scope="col">Revenue change</th></tr></thead><tbody><tr><td>Local</td><td>−0.3%</td></tr><tr><td>Domestic travel</td><td>+1.7%</td></tr><tr><td>International</td><td>+5.6%</td></tr></tbody></table></div>
+<p>The gain comes from the low-elasticity segments. Raising prices for local buyers is roughly revenue-neutral; for international buyers it is worth about +5.6%.</p></div></section>
+<section aria-labelledby="limitations"><h2 id="limitations"><span class="section-num">05</span>Limitations</h2><div class="body"><ul><li>The data is invented, and the model matches the generator. Real forecast error would be larger.</li>
+<li>Prices here vary at random. In real sales, organisers raise prices when demand is high, which biases a naive elasticity estimate toward zero. Separating the two takes price experiments or careful natural variation.</li>
+<li>Elasticity is constant, so large price moves extrapolate badly. There are no competitors, substitution between categories or matches, or drift over time.</li>
+<li>Only four matches are held out, so one accuracy number is thin evidence. The ±15% scenario range is an assumption.</li></ul></div></section>
+<section aria-labelledby="what-id-do-differently"><h2 id="what-id-do-differently"><span class="section-num">06</span>What I'd do differently</h2><div class="body"><ul><li>Fit a count model (Poisson or negative binomial) instead of least squares on logs, and shrink thin segments toward the overall pattern.</li>
+<li>Backtest over several rolling windows so scenario ranges come from observed error, not an assumed ±15%.</li>
+<li>Use real price experiments to estimate elasticity, and optimise prices against seat capacity rather than only testing a flat change.</li></ul></div></section>
+<section aria-labelledby="code-and-data"><h2 id="code-and-data"><span class="section-num">07</span>Code and data</h2><div class="body"><ul><li><a href="https://github.com/samriddhosaha/samriddha-portfolio/tree/HEAD/case-studies/event-pricing" target="_blank" rel="noopener">Code, README and generated data on GitHub <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li>
+<li>Run it yourself: <code>python generate_data.py</code>, then <code>python analyze.py</code>. It needs numpy, pandas and matplotlib.</li></ul>
+<p>Last updated 6 Oct 2026.</p></div></section>
+  </div>
+</main>
+<footer>
+  <div class="wrap foot-grid">
+    <div><a class="mark" href="/">SAMRIDDHA SAHA</a><div class="foot-small">Senior Business Analyst</div></div>
+    <ul class="foot-links">
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/samriddha-saha-12375a1a0/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in new tab)</span></a></li>
+      <li><a href="https://github.com/samriddhosaha/" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    <div class="foot-small">© <span data-year>2026</span> Samriddha Saha</div>
+  </div>
+</footer>
+</body>
+</html>
