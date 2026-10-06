@@ -3,3 +3,7 @@ Thumbs.db
 node_modules/
 .vercel
 *.log
+audit/src/
+claude-code-portfolio-prompt.md
+portfolio-audit-report.md
+__pycache__/

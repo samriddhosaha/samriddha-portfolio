@@ -1,0 +1,19 @@
+
+C:\t\base\index.html
+  249:6   error  <button> is missing recommended "type" attribute  no-implicit-button-type
+  358:25  error  Raw "&" must be encoded as "&amp;"                no-raw-characters
+  366:27  error  Raw "&" must be encoded as "&amp;"                no-raw-characters
+  377:32  error  Raw "&" must be encoded as "&amp;"                no-raw-characters
+  384:26  error  Raw "&" must be encoded as "&amp;"                no-raw-characters
+  447:21  error  Raw "&" must be encoded as "&amp;"                no-raw-characters
+  460:27  error  Inline style is not allowed                       no-inline-style
+  470:25  error  Inline style is not allowed                       no-inline-style
+
+✖ 8 problems (8 errors, 0 warnings)
+  5 errors and 0 warnings potentially fixable with the `--fix` option.
+
+More information:
+  https://html-validate.org/rules/no-implicit-button-type.html
+  https://html-validate.org/rules/no-raw-characters.html
+  https://html-validate.org/rules/no-inline-style.html
+

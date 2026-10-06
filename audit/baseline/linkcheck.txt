@@ -1,0 +1,15 @@
+[200] http://localhost:4100/
+[200] https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap
+[200] https://github.com/samriddhosaha/
+[200] https://github.com/samriddhosaha/SQL-PortfolioProjects/tree/main/Data-Warehouse-Project
+[200] https://github.com/samriddhosaha/PowerBI-Projects/tree/main/OLA-DataAnalysis
+[200] https://github.com/samriddhosaha/Python-Projects/tree/main/Data-Job-Market-Analysis
+
+  [200] http://localhost:4100/
+http://localhost:4100/
+  [200] https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap
+  [200] https://github.com/samriddhosaha/
+  [200] https://github.com/samriddhosaha/SQL-PortfolioProjects/tree/main/Data-Warehouse-Project
+  [200] https://github.com/samriddhosaha/PowerBI-Projects/tree/main/OLA-DataAnalysis
+  [200] https://github.com/samriddhosaha/Python-Projects/tree/main/Data-Job-Market-Analysis
+✓ Successfully scanned 6 links in 2.353 seconds.

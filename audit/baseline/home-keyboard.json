@@ -1,0 +1,149 @@
+[
+  {
+    "tag": "a",
+    "text": "SAMRIDDHA.",
+    "href": "#top",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "ABOUT",
+    "href": "#about",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "EXPERIENCE",
+    "href": "#experience",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "SKILLS",
+    "href": "#skills",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "PROJECTS",
+    "href": "#projects",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "THOUGHTS",
+    "href": "#thoughts",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "CONTACT",
+    "href": "#contact",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Get in touch",
+    "href": "#contact",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "LinkedIn ↗",
+    "href": "https://www.linkedin.com/in/samriddha-saha-12375a1a0/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "GitHub ↗",
+    "href": "https://github.com/samriddhosaha/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "POWER BI · JAN 2025\n\nOla Ride Cancellati",
+    "href": "https://github.com/samriddhosaha/PowerBI-Projects/tree/main/OLA-DataAnalysis",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "SQL · FEB 2025\n\nData Warehouse Project\n\n",
+    "href": "https://github.com/samriddhosaha/SQL-PortfolioProjects/tree/main/Data-Warehouse-Project",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "PYTHON · NOV 2024\n\nData-Related Job Mark",
+    "href": "https://github.com/samriddhosaha/Python-Projects/tree/main/Data-Job-Market-Analysis",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Read note →",
+    "href": "#",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Read note →",
+    "href": "#",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Read note →",
+    "href": "#",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Email me →",
+    "href": "mailto:samriddho16@gmail.com",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "LinkedIn ↗",
+    "href": "https://www.linkedin.com/in/samriddha-saha-12375a1a0/",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "LinkedIn",
+    "href": "https://www.linkedin.com/in/samriddha-saha-12375a1a0/",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "GitHub",
+    "href": "https://github.com/samriddhosaha/",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Email",
+    "href": "mailto:samriddho16@gmail.com",
+    "inMain": false,
+    "outline": true
+  }
+]

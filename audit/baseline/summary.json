@@ -1,0 +1,88 @@
+{
+  "base": "http://localhost:4100",
+  "browser": "chromium",
+  "pages": {
+    "/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 8849,
+          "headerHeight": 82
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 8427,
+          "headerHeight": 82
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 6276,
+          "headerHeight": 82
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 5631,
+          "headerHeight": 69.1875
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 5469,
+          "headerHeight": 69.1875
+        }
+      },
+      "axe390": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "axe1440": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "nodes": 1,
+          "help": "Elements must meet minimum color contrast ratio thresholds"
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "nodes": 1,
+          "help": "All page content should be contained by landmarks"
+        }
+      ],
+      "keyboard": {
+        "stops": 21,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 3755,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "print": {
+        "hiddenBlocks": 5
+      },
+      "transfer": {
+        "totalBytes": 190340,
+        "exImagesBytes": 190340,
+        "requests": 6,
+        "thirdParty": [
+          "fonts.googleapis.com",
+          "fonts.gstatic.com"
+        ],
+        "failed": []
+      },
+      "consoleErrors": []
+    }
+  }
+}

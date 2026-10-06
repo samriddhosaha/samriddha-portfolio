@@ -1,0 +1,38 @@
+[
+  {
+    "url": "http://localhost:4100/",
+    "type": "Document",
+    "status": 200,
+    "bytes": 24432
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+    "type": "Stylesheet",
+    "status": 200,
+    "bytes": 1556
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 22830
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/fraunces/v38/6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeA.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 67458
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 31558
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/fraunces/v38/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9hFwpX9W37lm1_mv0iQg.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 42506
+  }
+]
