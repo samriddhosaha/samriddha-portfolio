@@ -1,0 +1,271 @@
+{
+  "base": "http://localhost:4200",
+  "browser": "chromium",
+  "pages": {
+    "/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 8786,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 8469,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 7742,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 5380,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 5429,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 29,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 4366,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "print": {
+        "hiddenBlocks": 0
+      },
+      "transfer": {
+        "totalBytes": 227455,
+        "exImagesBytes": 146264,
+        "requests": 16,
+        "thirdParty": [],
+        "failed": []
+      },
+      "consoleErrors": []
+    },
+    "/work/event-pricing/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 8285,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 7985,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 6132,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 5679,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 5696,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 17,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 6215,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "print": {
+        "hiddenBlocks": 0
+      },
+      "transfer": {
+        "totalBytes": 142809,
+        "exImagesBytes": 114312,
+        "requests": 12,
+        "thirdParty": [],
+        "failed": []
+      },
+      "consoleErrors": []
+    },
+    "/work/ola-cancellations/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 3465,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 3425,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 2809,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 2385,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 2394,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 14,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 2291,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "print": {
+        "hiddenBlocks": 0
+      },
+      "transfer": {
+        "totalBytes": 152225,
+        "exImagesBytes": 107612,
+        "requests": 11,
+        "thirdParty": [],
+        "failed": []
+      },
+      "consoleErrors": []
+    },
+    "/work/data-warehouse/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 3274,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 3216,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 2511,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 2077,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 2094,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 13,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 1977,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "print": {
+        "hiddenBlocks": 0
+      },
+      "transfer": {
+        "totalBytes": 109404,
+        "exImagesBytes": 107042,
+        "requests": 11,
+        "thirdParty": [],
+        "failed": []
+      },
+      "consoleErrors": []
+    },
+    "/work/job-market/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 4236,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 4196,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 3851,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 3426,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 3476,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 14,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 2346,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "print": {
+        "hiddenBlocks": 0
+      },
+      "transfer": {
+        "totalBytes": 163391,
+        "exImagesBytes": 108080,
+        "requests": 13,
+        "thirdParty": [],
+        "failed": []
+      },
+      "consoleErrors": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+  [200] https://github.com/samriddhosaha/
+  [200] https://github.com/samriddhosaha/SQL-PortfolioProjects/tree/main/Data-Warehouse-Project
+  [200] https://github.com/samriddhosaha/Python-Projects/tree/main/Data-Job-Market-Analysis
+  [200] https://github.com/samriddhosaha/PowerBI-Projects/tree/main/OLA-DataAnalysis
+  [404] https://github.com/samriddhosaha/samriddha-portfolio/tree/HEAD/case-studies/event-pricing
+  [404] https://samriddha-portfolio.vercel.app/assets/img/og.png
+http://localhost:4300/work/event-pricing/
+  [200] http://localhost:4300/assets/img/work/event-pricing/chart-demand-mix.svg
+  [200] http://localhost:4300/assets/img/work/event-pricing/chart-elasticity.svg
+  [404] https://samriddha-portfolio.vercel.app/work/event-pricing/
+  [404] https://github.com/samriddhosaha/samriddha-portfolio/tree/HEAD/case-studies/event-pricing
+  [404] https://samriddha-portfolio.vercel.app/assets/img/og.png
+http://localhost:4300/work/ola-cancellations/
+  [404] https://samriddha-portfolio.vercel.app/work/ola-cancellations/
+  [404] https://samriddha-portfolio.vercel.app/assets/img/og.png
+http://localhost:4300/work/data-warehouse/
+  [404] https://samriddha-portfolio.vercel.app/work/data-warehouse/
+  [404] https://samriddha-portfolio.vercel.app/assets/img/og.png
+http://localhost:4300/work/job-market/
+  [200] http://localhost:4300/assets/img/work/job-market/skill-trend.webp
+  [200] http://localhost:4300/assets/img/work/job-market/optimal-skills.webp
+  [404] https://samriddha-portfolio.vercel.app/work/job-market/
+  [404] https://samriddha-portfolio.vercel.app/assets/img/og.png
+  [200] https://lukebarousse.com/python
+ERROR: Detected 11 broken links. Scanned 40 links in 2.408 seconds.

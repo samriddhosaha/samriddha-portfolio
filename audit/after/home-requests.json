@@ -1,0 +1,98 @@
+[
+  {
+    "url": "http://localhost:4200/",
+    "type": "Document",
+    "status": 200,
+    "bytes": 21036
+  },
+  {
+    "url": "http://localhost:4200/assets/css/site.css",
+    "type": "Stylesheet",
+    "status": 200,
+    "bytes": 18020
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/fraunces-900.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 11557
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/space-grotesk-400.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 7036
+  },
+  {
+    "url": "http://localhost:4200/assets/js/site.js",
+    "type": "Script",
+    "status": 200,
+    "bytes": 3558
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/space-grotesk-600.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 7000
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/space-grotesk-500.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 7008
+  },
+  {
+    "url": "http://localhost:4200/assets/img/work/event-pricing/chart-forecast.svg",
+    "type": "Image",
+    "status": 200,
+    "bytes": 16465
+  },
+  {
+    "url": "http://localhost:4200/assets/img/work/ola-cancellations/cancellation-dashboard.webp",
+    "type": "Image",
+    "status": 200,
+    "bytes": 44613
+  },
+  {
+    "url": "http://localhost:4200/assets/img/work/data-warehouse/layers.svg",
+    "type": "Image",
+    "status": 200,
+    "bytes": 2362
+  },
+  {
+    "url": "http://localhost:4200/assets/img/work/job-market/skill-demand.webp",
+    "type": "Image",
+    "status": 200,
+    "bytes": 17751
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/jetbrains-mono-500.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 16617
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/fraunces-500-italic.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 15017
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/jetbrains-mono-400.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 16061
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/fraunces-500.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 11613
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/fraunces-700.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 11741
+  }
+]

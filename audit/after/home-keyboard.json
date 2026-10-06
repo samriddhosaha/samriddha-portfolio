@@ -1,0 +1,205 @@
+[
+  {
+    "tag": "a",
+    "text": "Skip to content",
+    "href": "#main",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "SAMRIDDHA.",
+    "href": "/",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "WORK",
+    "href": "/#work",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "EXPERIENCE",
+    "href": "/#experience",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "TOOLKIT",
+    "href": "/#toolkit",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "ABOUT",
+    "href": "/#about",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "CONTACT",
+    "href": "/#contact",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "See selected work",
+    "href": "#work",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "samriddho16@gmail.com",
+    "href": "mailto:samriddho16@gmail.com",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "button",
+    "text": "Copy email",
+    "href": null,
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Event ticket demand and pricing",
+    "href": "/work/event-pricing/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Case study",
+    "href": "/work/event-pricing/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Code\n(opens in new tab)",
+    "href": "https://github.com/samriddhosaha/samriddha-portfolio/tree/HEAD/case-studies/event-pricing",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Ola ride cancellations",
+    "href": "/work/ola-cancellations/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Case study",
+    "href": "/work/ola-cancellations/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Live dashboard\n(opens in new tab)",
+    "href": "https://app.powerbi.com/links/5hiYQrtHJt?ctid=36da45f1-dd2c-4d1f-af13-5abe46b99921&pbi_source=linkShare",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "GitHub\n(opens in new tab)",
+    "href": "https://github.com/samriddhosaha/PowerBI-Projects/tree/main/OLA-DataAnalysis",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Data warehouse: ERP and CRM to a star sc",
+    "href": "/work/data-warehouse/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Case study",
+    "href": "/work/data-warehouse/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "GitHub\n(opens in new tab)",
+    "href": "https://github.com/samriddhosaha/SQL-PortfolioProjects/tree/main/Data-Warehouse-Project",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Data job market analysis, India",
+    "href": "/work/job-market/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Case study",
+    "href": "/work/job-market/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "GitHub\n(opens in new tab)",
+    "href": "https://github.com/samriddhosaha/Python-Projects/tree/main/Data-Job-Market-Analysis",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "Email me",
+    "href": "mailto:samriddho16@gmail.com",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "button",
+    "text": "Copy email",
+    "href": null,
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "LinkedIn\n(opens in new tab)",
+    "href": "https://www.linkedin.com/in/samriddha-saha-12375a1a0/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "GitHub\n(opens in new tab)",
+    "href": "https://github.com/samriddhosaha/",
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "LinkedIn\n(opens in new tab)",
+    "href": "https://www.linkedin.com/in/samriddha-saha-12375a1a0/",
+    "inMain": false,
+    "outline": true
+  },
+  {
+    "tag": "a",
+    "text": "GitHub\n(opens in new tab)",
+    "href": "https://github.com/samriddhosaha/",
+    "inMain": false,
+    "outline": true
+  }
+]

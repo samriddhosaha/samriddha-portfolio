@@ -1,0 +1,74 @@
+[
+  {
+    "url": "http://localhost:4200/work/event-pricing/",
+    "type": "Document",
+    "status": 200,
+    "bytes": 15714
+  },
+  {
+    "url": "http://localhost:4200/assets/css/site.css",
+    "type": "Stylesheet",
+    "status": 200,
+    "bytes": 18020
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/fraunces-900.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 11557
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/space-grotesk-400.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 7036
+  },
+  {
+    "url": "http://localhost:4200/assets/js/site.js",
+    "type": "Script",
+    "status": 200,
+    "bytes": 3558
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/space-grotesk-600.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 7000
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/space-grotesk-500.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 7008
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/jetbrains-mono-500.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 16617
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/fraunces-700.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 11741
+  },
+  {
+    "url": "http://localhost:4200/assets/fonts/jetbrains-mono-400.woff2",
+    "type": "Font",
+    "status": 200,
+    "bytes": 16061
+  },
+  {
+    "url": "http://localhost:4200/assets/img/work/event-pricing/chart-demand-mix.svg",
+    "type": "Image",
+    "status": 200,
+    "bytes": 13785
+  },
+  {
+    "url": "http://localhost:4200/assets/img/work/event-pricing/chart-elasticity.svg",
+    "type": "Image",
+    "status": 200,
+    "bytes": 14712
+  }
+]

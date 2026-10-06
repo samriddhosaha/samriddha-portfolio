@@ -1,0 +1,30 @@
+PASS chromium menu closed initially
+PASS chromium menu opens
+PASS chromium menu link height >=44 44
+PASS chromium Escape closes menu
+PASS chromium focus returns to toggle
+PASS chromium mailto assembled
+PASS chromium phone absent
+PASS chromium scroll-spy sets one aria-current
+PASS chromium copy button copies address
+PASS chromium no console errors []
+PASS firefox menu closed initially
+PASS firefox menu opens
+PASS firefox menu link height >=44 44
+PASS firefox Escape closes menu
+PASS firefox focus returns to toggle
+PASS firefox mailto assembled
+PASS firefox phone absent
+PASS firefox scroll-spy sets one aria-current
+PASS firefox no console errors []
+PASS webkit menu closed initially
+PASS webkit menu opens
+PASS webkit menu link height >=44 44
+PASS webkit Escape closes menu
+PASS webkit focus returns to toggle
+PASS webkit mailto assembled
+PASS webkit phone absent
+PASS webkit scroll-spy sets one aria-current
+PASS webkit no console errors []
+PASS JS off: nav links visible on mobile
+PASS JS off: obfuscated email fallback visible

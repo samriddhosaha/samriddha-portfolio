@@ -1,0 +1,2 @@
+  6:93  error  title text cannot be longer than 70 characters  long-title
+✖ 1 problem (1 error, 0 warnings)

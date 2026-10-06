@@ -1,0 +1,92 @@
+{
+  "base": "http://localhost:4300",
+  "browser": "firefox",
+  "pages": {
+    "/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 8790,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 8473,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 7746,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 5384,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 5433,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 60,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 4366,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "consoleErrors": []
+    },
+    "/work/event-pricing/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 8288,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 7989,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 6134,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 5681,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 5697,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 60,
+        "beforeMain": 7,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 6215,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "consoleErrors": []
+    }
+  }
+}

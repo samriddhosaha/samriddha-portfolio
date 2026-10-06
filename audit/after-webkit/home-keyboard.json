@@ -1,0 +1,16 @@
+[
+  {
+    "tag": "button",
+    "text": "Copy email",
+    "href": null,
+    "inMain": true,
+    "outline": true
+  },
+  {
+    "tag": "button",
+    "text": "Copy email",
+    "href": null,
+    "inMain": true,
+    "outline": true
+  }
+]

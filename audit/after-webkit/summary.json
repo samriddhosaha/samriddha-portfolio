@@ -1,0 +1,92 @@
+{
+  "base": "http://localhost:4300",
+  "browser": "webkit",
+  "pages": {
+    "/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 8785,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 8468,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 7741,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 5380,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 5428,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 2,
+        "beforeMain": 0,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 4366,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "consoleErrors": []
+    },
+    "/work/event-pricing/": {
+      "layout": {
+        "360": {
+          "overflowX": false,
+          "pageHeight": 8286,
+          "headerHeight": 84
+        },
+        "390": {
+          "overflowX": false,
+          "pageHeight": 7987,
+          "headerHeight": 84
+        },
+        "768": {
+          "overflowX": false,
+          "pageHeight": 6133,
+          "headerHeight": 84
+        },
+        "1024": {
+          "overflowX": false,
+          "pageHeight": 5680,
+          "headerHeight": 82
+        },
+        "1440": {
+          "overflowX": false,
+          "pageHeight": 5696,
+          "headerHeight": 82
+        }
+      },
+      "axe390": [],
+      "axe1440": [],
+      "keyboard": {
+        "stops": 4,
+        "beforeMain": 0,
+        "noVisibleFocus": 0
+      },
+      "jsOff": {
+        "textChars": 6214,
+        "deadLinks": 0,
+        "emptyMain": false,
+        "hiddenBlocks": 0
+      },
+      "consoleErrors": []
+    }
+  }
+}
