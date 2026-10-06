@@ -1,0 +1,30 @@
+{
+  "train_rows": 324,
+  "test_rows": 108,
+  "wape_units_cell": 0.0838,
+  "wape_units_cell_naive": 0.3435,
+  "wape_revenue_match": 0.0086,
+  "bias_units": 0.0051,
+  "matches_inside_scenario_band": "4 of 4",
+  "sold_out_groups_total": 8,
+  "by_segment": [
+    {
+      "segment": "Domestic travel",
+      "units": 29845,
+      "revenue": 5710692.6,
+      "avg_price": 191.3
+    },
+    {
+      "segment": "International",
+      "units": 19018,
+      "revenue": 3790895.2,
+      "avg_price": 199.3
+    },
+    {
+      "segment": "Local",
+      "units": 52073,
+      "revenue": 10103682.6,
+      "avg_price": 194.0
+    }
+  ]
+}

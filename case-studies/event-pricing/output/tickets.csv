@@ -1,0 +1,433 @@
+match_id,tier,category,segment,window,price,units,sold_out,revenue
+1,B,Cat1,Local,Early,417.53,89,0,37160.17
+1,B,Cat1,Local,Mid,370.24,177,0,65532.48
+1,B,Cat1,Local,Late,494.17,69,0,34097.73
+1,B,Cat1,Domestic travel,Early,407.68,52,0,21199.36
+1,B,Cat1,Domestic travel,Mid,466.9,79,0,36885.1
+1,B,Cat1,Domestic travel,Late,485.93,52,0,25268.36
+1,B,Cat1,International,Early,427.14,23,0,9824.22
+1,B,Cat1,International,Mid,557.47,40,0,22298.8
+1,B,Cat1,International,Late,526.45,26,0,13687.7
+1,B,Cat2,Local,Early,207.19,381,0,78939.39
+1,B,Cat2,Local,Mid,222.37,639,0,142094.43
+1,B,Cat2,Local,Late,278.23,287,0,79852.01
+1,B,Cat2,Domestic travel,Early,240.81,177,0,42623.37
+1,B,Cat2,Domestic travel,Mid,216.1,322,0,69584.2
+1,B,Cat2,Domestic travel,Late,267.54,205,0,54845.7
+1,B,Cat2,International,Early,190.15,120,0,22818.0
+1,B,Cat2,International,Mid,268.43,174,0,46706.82
+1,B,Cat2,International,Late,242.06,91,0,22027.46
+1,B,Cat3,Local,Early,109.55,959,0,105058.45
+1,B,Cat3,Local,Mid,127.75,1275,0,162881.25
+1,B,Cat3,Local,Late,127.29,845,0,107560.05
+1,B,Cat3,Domestic travel,Early,103.05,511,0,52658.55
+1,B,Cat3,Domestic travel,Mid,128.26,739,0,94784.14
+1,B,Cat3,Domestic travel,Late,111.5,564,0,62886.0
+1,B,Cat3,International,Early,103.99,370,0,38476.3
+1,B,Cat3,International,Mid,109.3,511,0,55852.3
+1,B,Cat3,International,Late,143.57,265,0,38046.05
+2,C,Cat1,Local,Early,267.15,58,0,15494.7
+2,C,Cat1,Local,Mid,322.42,80,0,25793.6
+2,C,Cat1,Local,Late,312.79,52,0,16265.08
+2,C,Cat1,Domestic travel,Early,328.17,24,0,7876.08
+2,C,Cat1,Domestic travel,Mid,335.66,60,0,20139.6
+2,C,Cat1,Domestic travel,Late,357.54,29,0,10368.66
+2,C,Cat1,International,Early,295.5,16,0,4728.0
+2,C,Cat1,International,Mid,290.41,30,0,8712.3
+2,C,Cat1,International,Late,385.48,13,0,5011.24
+2,C,Cat2,Local,Early,133.21,231,0,30771.51
+2,C,Cat2,Local,Mid,208.84,209,0,43647.56
+2,C,Cat2,Local,Late,179.03,238,0,42609.14
+2,C,Cat2,Domestic travel,Early,143.9,119,0,17124.1
+2,C,Cat2,Domestic travel,Mid,174.29,148,0,25794.92
+2,C,Cat2,Domestic travel,Late,170.3,120,0,20436.0
+2,C,Cat2,International,Early,160.04,64,0,10242.56
+2,C,Cat2,International,Mid,178.88,101,0,18066.88
+2,C,Cat2,International,Late,224.45,79,0,17731.55
+2,C,Cat3,Local,Early,89.17,462,0,41196.54
+2,C,Cat3,Local,Mid,97.22,596,0,57943.12
+2,C,Cat3,Local,Late,88.82,486,0,43166.52
+2,C,Cat3,Domestic travel,Early,87.03,273,0,23759.19
+2,C,Cat3,Domestic travel,Mid,83.59,467,0,39036.53
+2,C,Cat3,Domestic travel,Late,89.36,342,0,30561.12
+2,C,Cat3,International,Early,72.03,187,0,13469.61
+2,C,Cat3,International,Mid,96.02,318,0,30534.36
+2,C,Cat3,International,Late,94.67,178,0,16851.26
+3,A,Cat1,Local,Early,621.52,171,0,106279.92
+3,A,Cat1,Local,Mid,655.88,214,0,140358.32
+3,A,Cat1,Local,Late,837.66,105,0,87954.3
+3,A,Cat1,Domestic travel,Early,597.7,85,0,50804.5
+3,A,Cat1,Domestic travel,Mid,640.19,129,0,82584.51
+3,A,Cat1,Domestic travel,Late,641.19,97,0,62195.43
+3,A,Cat1,International,Early,730.0,40,0,29200.0
+3,A,Cat1,International,Mid,698.45,86,0,60066.7
+3,A,Cat1,International,Late,802.52,46,0,36915.92
+3,A,Cat2,Local,Early,294.15,536,1,157664.4
+3,A,Cat2,Local,Mid,354.74,841,1,298336.34
+3,A,Cat2,Local,Late,427.27,421,1,179880.67
+3,A,Cat2,Domestic travel,Early,348.35,241,1,83952.35
+3,A,Cat2,Domestic travel,Mid,389.75,376,1,146546.0
+3,A,Cat2,Domestic travel,Late,369.07,290,1,107030.3
+3,A,Cat2,International,Early,353.19,155,1,54744.45
+3,A,Cat2,International,Mid,376.97,245,1,92357.65
+3,A,Cat2,International,Late,418.84,190,1,79579.6
+3,A,Cat3,Local,Early,164.88,1249,1,205935.12
+3,A,Cat3,Local,Mid,186.0,2131,1,396366.0
+3,A,Cat3,Local,Late,191.6,1202,1,230303.2
+3,A,Cat3,Domestic travel,Early,184.49,650,1,119918.5
+3,A,Cat3,Domestic travel,Mid,188.08,1274,1,239613.92
+3,A,Cat3,Domestic travel,Late,192.21,701,1,134739.21
+3,A,Cat3,International,Early,143.99,525,1,75594.75
+3,A,Cat3,International,Mid,202.37,748,1,151372.76
+3,A,Cat3,International,Late,169.2,514,1,86968.8
+4,C,Cat1,Local,Early,264.36,49,0,12953.64
+4,C,Cat1,Local,Mid,294.55,94,0,27687.7
+4,C,Cat1,Local,Late,275.55,75,0,20666.25
+4,C,Cat1,Domestic travel,Early,333.23,29,0,9663.67
+4,C,Cat1,Domestic travel,Mid,268.92,67,0,18017.64
+4,C,Cat1,Domestic travel,Late,327.27,29,0,9490.83
+4,C,Cat1,International,Early,290.22,16,0,4643.52
+4,C,Cat1,International,Mid,310.23,42,0,13029.66
+4,C,Cat1,International,Late,342.2,22,0,7528.4
+4,C,Cat2,Local,Early,160.72,179,0,28768.88
+4,C,Cat2,Local,Mid,171.45,261,0,44748.45
+4,C,Cat2,Local,Late,194.59,197,0,38334.23
+4,C,Cat2,Domestic travel,Early,134.2,112,0,15030.4
+4,C,Cat2,Domestic travel,Mid,179.9,139,0,25006.1
+4,C,Cat2,Domestic travel,Late,206.5,80,0,16520.0
+4,C,Cat2,International,Early,166.07,50,0,8303.5
+4,C,Cat2,International,Mid,189.96,105,0,19945.8
+4,C,Cat2,International,Late,190.25,77,0,14649.25
+4,C,Cat3,Local,Early,65.19,532,0,34681.08
+4,C,Cat3,Local,Mid,81.64,913,0,74537.32
+4,C,Cat3,Local,Late,91.76,552,0,50651.52
+4,C,Cat3,Domestic travel,Early,71.24,274,0,19519.76
+4,C,Cat3,Domestic travel,Mid,91.03,523,0,47608.69
+4,C,Cat3,Domestic travel,Late,83.27,369,0,30726.63
+4,C,Cat3,International,Early,82.95,167,0,13852.65
+4,C,Cat3,International,Mid,82.43,317,0,26130.31
+4,C,Cat3,International,Late,102.81,209,0,21487.29
+5,B,Cat1,Local,Early,399.72,92,0,36774.24
+5,B,Cat1,Local,Mid,453.13,128,0,58000.64
+5,B,Cat1,Local,Late,511.76,71,0,36334.96
+5,B,Cat1,Domestic travel,Early,345.48,46,0,15892.08
+5,B,Cat1,Domestic travel,Mid,437.0,86,0,37582.0
+5,B,Cat1,Domestic travel,Late,512.51,47,0,24087.97
+5,B,Cat1,International,Early,430.87,29,0,12495.23
+5,B,Cat1,International,Mid,450.29,63,0,28368.27
+5,B,Cat1,International,Late,499.55,33,0,16485.15
+5,B,Cat2,Local,Early,208.13,396,0,82419.48
+5,B,Cat2,Local,Mid,265.79,489,0,129971.31
+5,B,Cat2,Local,Late,267.24,283,0,75628.92
+5,B,Cat2,Domestic travel,Early,187.35,226,0,42341.1
+5,B,Cat2,Domestic travel,Mid,286.53,267,0,76503.51
+5,B,Cat2,Domestic travel,Late,204.45,217,0,44365.65
+5,B,Cat2,International,Early,192.48,120,0,23097.6
+5,B,Cat2,International,Mid,270.57,164,0,44373.48
+5,B,Cat2,International,Late,300.83,126,0,37904.58
+5,B,Cat3,Local,Early,123.43,730,0,90103.9
+5,B,Cat3,Local,Mid,138.79,1118,0,155167.22
+5,B,Cat3,Local,Late,127.31,834,0,106176.54
+5,B,Cat3,Domestic travel,Early,92.35,638,0,58919.3
+5,B,Cat3,Domestic travel,Mid,94.45,976,0,92183.2
+5,B,Cat3,Domestic travel,Late,135.31,482,0,65219.42
+5,B,Cat3,International,Early,110.22,286,0,31522.92
+5,B,Cat3,International,Mid,124.71,557,0,69463.47
+5,B,Cat3,International,Late,130.86,330,0,43183.8
+6,C,Cat1,Local,Early,250.33,58,0,14519.14
+6,C,Cat1,Local,Mid,316.62,71,0,22480.02
+6,C,Cat1,Local,Late,341.01,44,0,15004.44
+6,C,Cat1,Domestic travel,Early,245.28,30,0,7358.4
+6,C,Cat1,Domestic travel,Mid,321.04,43,0,13804.72
+6,C,Cat1,Domestic travel,Late,337.86,22,0,7432.92
+6,C,Cat1,International,Early,252.03,21,0,5292.63
+6,C,Cat1,International,Mid,301.93,26,0,7850.18
+6,C,Cat1,International,Late,393.6,21,0,8265.6
+6,C,Cat2,Local,Early,133.07,239,0,31803.73
+6,C,Cat2,Local,Mid,151.78,404,0,61319.12
+6,C,Cat2,Local,Late,206.74,142,0,29357.08
+6,C,Cat2,Domestic travel,Early,150.71,112,0,16879.52
+6,C,Cat2,Domestic travel,Mid,183.44,173,0,31735.12
+6,C,Cat2,Domestic travel,Late,173.48,90,0,15613.2
+6,C,Cat2,International,Early,151.24,54,0,8166.96
+6,C,Cat2,International,Mid,171.71,84,0,14423.64
+6,C,Cat2,International,Late,165.78,77,0,12765.06
+6,C,Cat3,Local,Early,80.4,431,0,34652.4
+6,C,Cat3,Local,Mid,101.05,608,0,61438.4
+6,C,Cat3,Local,Late,97.99,447,0,43801.53
+6,C,Cat3,Domestic travel,Early,85.35,263,0,22447.05
+6,C,Cat3,Domestic travel,Mid,83.32,422,0,35161.04
+6,C,Cat3,Domestic travel,Late,87.69,259,0,22711.71
+6,C,Cat3,International,Early,70.39,169,0,11895.91
+6,C,Cat3,International,Mid,106.6,299,0,31873.4
+6,C,Cat3,International,Late,100.26,212,0,21255.12
+7,A,Cat1,Local,Early,657.49,146,0,95993.54
+7,A,Cat1,Local,Mid,696.54,180,0,125377.2
+7,A,Cat1,Local,Late,588.74,164,0,96553.36
+7,A,Cat1,Domestic travel,Early,679.02,56,0,38025.12
+7,A,Cat1,Domestic travel,Mid,749.67,94,0,70468.98
+7,A,Cat1,Domestic travel,Late,726.23,93,0,67539.39
+7,A,Cat1,International,Early,594.83,41,0,24388.03
+7,A,Cat1,International,Mid,651.72,70,0,45620.4
+7,A,Cat1,International,Late,591.08,56,0,33100.48
+7,A,Cat2,Local,Early,347.17,467,0,162128.39
+7,A,Cat2,Local,Mid,392.17,664,0,260400.88
+7,A,Cat2,Local,Late,424.13,410,0,173893.3
+7,A,Cat2,Domestic travel,Early,287.03,269,0,77211.07
+7,A,Cat2,Domestic travel,Mid,338.61,444,0,150342.84
+7,A,Cat2,Domestic travel,Late,397.45,252,0,100157.4
+7,A,Cat2,International,Early,304.92,231,0,70436.52
+7,A,Cat2,International,Mid,399.77,275,0,109936.75
+7,A,Cat2,International,Late,444.18,194,0,86170.92
+7,A,Cat3,Local,Early,192.58,1222,1,235332.76
+7,A,Cat3,Local,Mid,180.22,2169,1,390897.18
+7,A,Cat3,Local,Late,199.2,1037,1,206570.4
+7,A,Cat3,Domestic travel,Early,162.72,762,1,123992.64
+7,A,Cat3,Domestic travel,Mid,167.06,1190,1,198801.4
+7,A,Cat3,Domestic travel,Late,165.6,900,1,149040.0
+7,A,Cat3,International,Early,179.5,448,1,80416.0
+7,A,Cat3,International,Mid,186.31,818,1,152401.58
+7,A,Cat3,International,Late,195.4,450,1,87930.0
+8,B,Cat1,Local,Early,396.9,88,0,34927.2
+8,B,Cat1,Local,Mid,422.61,149,0,62968.89
+8,B,Cat1,Local,Late,508.71,59,0,30013.89
+8,B,Cat1,Domestic travel,Early,360.57,45,0,16225.65
+8,B,Cat1,Domestic travel,Mid,508.09,62,0,31501.58
+8,B,Cat1,Domestic travel,Late,442.21,61,0,26974.81
+8,B,Cat1,International,Early,392.0,39,0,15288.0
+8,B,Cat1,International,Mid,544.44,43,0,23410.92
+8,B,Cat1,International,Late,680.24,27,0,18366.48
+8,B,Cat2,Local,Early,217.0,308,0,66836.0
+8,B,Cat2,Local,Mid,257.06,441,0,113363.46
+8,B,Cat2,Local,Late,226.57,384,0,87002.88
+8,B,Cat2,Domestic travel,Early,223.69,170,0,38027.3
+8,B,Cat2,Domestic travel,Mid,218.6,316,0,69077.6
+8,B,Cat2,Domestic travel,Late,282.78,152,0,42982.56
+8,B,Cat2,International,Early,224.72,114,0,25618.08
+8,B,Cat2,International,Mid,255.7,168,0,42957.6
+8,B,Cat2,International,Late,311.46,87,0,27097.02
+8,B,Cat3,Local,Early,99.37,974,0,96786.38
+8,B,Cat3,Local,Mid,116.32,1615,0,187856.8
+8,B,Cat3,Local,Late,138.47,651,0,90143.97
+8,B,Cat3,Domestic travel,Early,106.42,640,0,68108.8
+8,B,Cat3,Domestic travel,Mid,117.33,738,0,86589.54
+8,B,Cat3,Domestic travel,Late,122.44,548,0,67097.12
+8,B,Cat3,International,Early,119.21,346,0,41246.66
+8,B,Cat3,International,Mid,126.52,550,0,69586.0
+8,B,Cat3,International,Late,121.04,369,0,44663.76
+9,C,Cat1,Local,Early,342.21,39,0,13346.19
+9,C,Cat1,Local,Mid,317.39,101,0,32056.39
+9,C,Cat1,Local,Late,408.55,37,0,15116.35
+9,C,Cat1,Domestic travel,Early,281.02,29,0,8149.58
+9,C,Cat1,Domestic travel,Mid,355.17,43,0,15272.31
+9,C,Cat1,Domestic travel,Late,258.48,45,0,11631.6
+9,C,Cat1,International,Early,296.6,16,0,4745.6
+9,C,Cat1,International,Mid,361.27,29,0,10476.83
+9,C,Cat1,International,Late,360.93,29,0,10466.97
+9,C,Cat2,Local,Early,155.78,167,0,26015.26
+9,C,Cat2,Local,Mid,175.61,290,0,50926.9
+9,C,Cat2,Local,Late,204.75,148,0,30303.0
+9,C,Cat2,Domestic travel,Early,151.14,98,0,14811.72
+9,C,Cat2,Domestic travel,Mid,150.16,213,0,31984.08
+9,C,Cat2,Domestic travel,Late,205.06,99,0,20300.94
+9,C,Cat2,International,Early,167.31,65,0,10875.15
+9,C,Cat2,International,Mid,202.9,123,0,24956.7
+9,C,Cat2,International,Late,199.41,72,0,14357.52
+9,C,Cat3,Local,Early,82.09,473,0,38828.57
+9,C,Cat3,Local,Mid,89.5,717,0,64171.5
+9,C,Cat3,Local,Late,89.0,521,0,46369.0
+9,C,Cat3,Domestic travel,Early,64.07,347,0,22232.29
+9,C,Cat3,Domestic travel,Mid,81.73,478,0,39066.94
+9,C,Cat3,Domestic travel,Late,95.37,296,0,28229.52
+9,C,Cat3,International,Early,72.89,151,0,11006.39
+9,C,Cat3,International,Mid,93.26,321,0,29936.46
+9,C,Cat3,International,Late,96.99,203,0,19688.97
+10,B,Cat1,Local,Early,383.03,116,0,44431.48
+10,B,Cat1,Local,Mid,496.03,126,0,62499.78
+10,B,Cat1,Local,Late,454.25,101,0,45879.25
+10,B,Cat1,Domestic travel,Early,423.11,48,0,20309.28
+10,B,Cat1,Domestic travel,Mid,574.65,48,0,27583.2
+10,B,Cat1,Domestic travel,Late,515.78,47,0,24241.66
+10,B,Cat1,International,Early,468.39,33,0,15456.87
+10,B,Cat1,International,Mid,447.3,38,0,16997.4
+10,B,Cat1,International,Late,442.79,27,0,11955.33
+10,B,Cat2,Local,Early,297.98,177,0,52742.46
+10,B,Cat2,Local,Mid,251.55,496,0,124768.8
+10,B,Cat2,Local,Late,235.66,371,0,87429.86
+10,B,Cat2,Domestic travel,Early,225.19,167,0,37606.73
+10,B,Cat2,Domestic travel,Mid,275.57,279,0,76884.03
+10,B,Cat2,Domestic travel,Late,291.96,160,0,46713.6
+10,B,Cat2,International,Early,196.47,107,0,21022.29
+10,B,Cat2,International,Mid,290.09,163,0,47284.67
+10,B,Cat2,International,Late,277.82,98,0,27226.36
+10,B,Cat3,Local,Early,111.87,744,0,83231.28
+10,B,Cat3,Local,Mid,111.33,1595,0,177571.35
+10,B,Cat3,Local,Late,128.82,734,0,94553.88
+10,B,Cat3,Domestic travel,Early,100.84,608,0,61310.72
+10,B,Cat3,Domestic travel,Mid,120.74,816,0,98523.84
+10,B,Cat3,Domestic travel,Late,156.75,322,0,50473.5
+10,B,Cat3,International,Early,108.16,299,0,32339.84
+10,B,Cat3,International,Mid,132.87,531,0,70553.97
+10,B,Cat3,International,Late,135.65,309,0,41915.85
+11,A,Cat1,Local,Early,607.58,176,0,106934.08
+11,A,Cat1,Local,Mid,599.45,244,0,146265.8
+11,A,Cat1,Local,Late,672.84,148,0,99580.32
+11,A,Cat1,Domestic travel,Early,582.99,82,0,47805.18
+11,A,Cat1,Domestic travel,Mid,667.16,126,0,84062.16
+11,A,Cat1,Domestic travel,Late,688.03,77,0,52978.31
+11,A,Cat1,International,Early,532.35,59,0,31408.65
+11,A,Cat1,International,Mid,674.28,85,0,57313.8
+11,A,Cat1,International,Late,789.44,48,0,37893.12
+11,A,Cat2,Local,Early,328.95,530,1,174343.5
+11,A,Cat2,Local,Mid,331.67,831,1,275617.77
+11,A,Cat2,Local,Late,361.4,492,1,177808.8
+11,A,Cat2,Domestic travel,Early,316.24,274,1,86649.76
+11,A,Cat2,Domestic travel,Mid,471.11,358,1,168657.38
+11,A,Cat2,Domestic travel,Late,404.9,232,1,93936.8
+11,A,Cat2,International,Early,281.6,139,1,39142.4
+11,A,Cat2,International,Mid,373.34,273,1,101921.82
+11,A,Cat2,International,Late,443.68,166,1,73650.88
+11,A,Cat3,Local,Early,153.34,1277,1,195815.18
+11,A,Cat3,Local,Mid,143.23,2811,1,402619.53
+11,A,Cat3,Local,Late,198.53,1129,1,224140.37
+11,A,Cat3,Domestic travel,Early,184.07,558,1,102711.06
+11,A,Cat3,Domestic travel,Mid,199.83,1071,1,214017.93
+11,A,Cat3,Domestic travel,Late,194.63,610,1,118724.3
+11,A,Cat3,International,Early,149.59,467,1,69858.53
+11,A,Cat3,International,Mid,194.49,655,1,127390.95
+11,A,Cat3,International,Late,218.81,418,1,91462.58
+12,C,Cat1,Local,Early,282.1,55,0,15515.5
+12,C,Cat1,Local,Mid,367.33,68,0,24978.44
+12,C,Cat1,Local,Late,325.55,53,0,17254.15
+12,C,Cat1,Domestic travel,Early,319.44,22,0,7027.68
+12,C,Cat1,Domestic travel,Mid,316.91,44,0,13944.04
+12,C,Cat1,Domestic travel,Late,423.36,21,0,8890.56
+12,C,Cat1,International,Early,272.53,11,0,2997.83
+12,C,Cat1,International,Mid,316.69,31,0,9817.39
+12,C,Cat1,International,Late,337.91,17,0,5744.47
+12,C,Cat2,Local,Early,119.3,267,0,31853.1
+12,C,Cat2,Local,Mid,163.58,325,0,53163.5
+12,C,Cat2,Local,Late,188.63,176,0,33198.88
+12,C,Cat2,Domestic travel,Early,145.97,106,0,15472.82
+12,C,Cat2,Domestic travel,Mid,179.05,180,0,32229.0
+12,C,Cat2,Domestic travel,Late,190.13,105,0,19963.65
+12,C,Cat2,International,Early,171.93,49,0,8424.57
+12,C,Cat2,International,Mid,229.49,89,0,20424.61
+12,C,Cat2,International,Late,201.14,59,0,11867.26
+12,C,Cat3,Local,Early,73.71,631,0,46511.01
+12,C,Cat3,Local,Mid,90.29,840,0,75843.6
+12,C,Cat3,Local,Late,87.83,499,0,43827.17
+12,C,Cat3,Domestic travel,Early,82.85,232,0,19221.2
+12,C,Cat3,Domestic travel,Mid,87.23,398,0,34717.54
+12,C,Cat3,Domestic travel,Late,101.71,267,0,27156.57
+12,C,Cat3,International,Early,78.41,193,0,15133.13
+12,C,Cat3,International,Mid,97.34,318,0,30954.12
+12,C,Cat3,International,Late,90.89,170,0,15451.3
+13,B,Cat1,Local,Early,363.3,107,0,38873.1
+13,B,Cat1,Local,Mid,521.64,90,0,46947.6
+13,B,Cat1,Local,Late,596.33,60,0,35779.8
+13,B,Cat1,Domestic travel,Early,351.74,45,0,15828.3
+13,B,Cat1,Domestic travel,Mid,428.41,81,0,34701.21
+13,B,Cat1,Domestic travel,Late,528.34,37,0,19548.58
+13,B,Cat1,International,Early,506.16,34,0,17209.44
+13,B,Cat1,International,Mid,413.24,62,0,25620.88
+13,B,Cat1,International,Late,496.39,32,0,15884.48
+13,B,Cat2,Local,Early,258.84,267,0,69110.28
+13,B,Cat2,Local,Mid,274.12,421,0,115404.52
+13,B,Cat2,Local,Late,233.51,369,0,86165.19
+13,B,Cat2,Domestic travel,Early,167.43,221,0,37002.03
+13,B,Cat2,Domestic travel,Mid,259.18,230,0,59611.4
+13,B,Cat2,Domestic travel,Late,283.09,197,0,55768.73
+13,B,Cat2,International,Early,212.04,120,0,25444.8
+13,B,Cat2,International,Mid,240.31,216,0,51906.96
+13,B,Cat2,International,Late,277.51,137,0,38018.87
+13,B,Cat3,Local,Early,100.45,962,0,96632.9
+13,B,Cat3,Local,Mid,120.48,1254,0,151081.92
+13,B,Cat3,Local,Late,110.61,1044,0,115476.84
+13,B,Cat3,Domestic travel,Early,86.15,628,0,54102.2
+13,B,Cat3,Domestic travel,Mid,103.73,902,0,93564.46
+13,B,Cat3,Domestic travel,Late,139.65,484,0,67590.6
+13,B,Cat3,International,Early,99.6,350,0,34860.0
+13,B,Cat3,International,Mid,122.16,466,0,56926.56
+13,B,Cat3,International,Late,118.59,343,0,40676.37
+14,A,Cat1,Local,Early,541.5,179,0,96928.5
+14,A,Cat1,Local,Mid,634.13,248,0,157264.24
+14,A,Cat1,Local,Late,780.47,104,0,81168.88
+14,A,Cat1,Domestic travel,Early,615.59,76,0,46784.84
+14,A,Cat1,Domestic travel,Mid,552.78,137,0,75730.86
+14,A,Cat1,Domestic travel,Late,611.9,88,0,53847.2
+14,A,Cat1,International,Early,596.16,46,0,27423.36
+14,A,Cat1,International,Mid,663.6,69,0,45788.4
+14,A,Cat1,International,Late,765.83,62,0,47481.46
+14,A,Cat2,Local,Early,306.62,662,1,202982.44
+14,A,Cat2,Local,Mid,407.86,670,1,273266.2
+14,A,Cat2,Local,Late,402.85,402,1,161945.7
+14,A,Cat2,Domestic travel,Early,351.12,233,1,81810.96
+14,A,Cat2,Domestic travel,Mid,352.16,434,1,152837.44
+14,A,Cat2,Domestic travel,Late,406.53,246,1,100006.38
+14,A,Cat2,International,Early,300.93,162,1,48750.66
+14,A,Cat2,International,Mid,381.13,301,1,114720.13
+14,A,Cat2,International,Late,403.53,185,1,74653.05
+14,A,Cat3,Local,Early,142.79,1472,1,210186.88
+14,A,Cat3,Local,Mid,177.27,2015,1,357199.05
+14,A,Cat3,Local,Late,168.37,1164,1,195982.68
+14,A,Cat3,Domestic travel,Early,154.79,696,1,107733.84
+14,A,Cat3,Domestic travel,Mid,167.34,1260,1,210848.4
+14,A,Cat3,Domestic travel,Late,202.78,771,1,156343.38
+14,A,Cat3,International,Early,181.43,428,1,77652.04
+14,A,Cat3,International,Mid,206.18,723,1,149068.14
+14,A,Cat3,International,Late,190.54,467,1,88982.18
+15,C,Cat1,Local,Early,285.74,48,0,13715.52
+15,C,Cat1,Local,Mid,263.72,81,0,21361.32
+15,C,Cat1,Local,Late,348.12,57,0,19842.84
+15,C,Cat1,Domestic travel,Early,332.37,32,0,10635.84
+15,C,Cat1,Domestic travel,Mid,289.89,43,0,12465.27
+15,C,Cat1,Domestic travel,Late,386.19,21,0,8109.99
+15,C,Cat1,International,Early,277.78,20,0,5555.6
+15,C,Cat1,International,Mid,300.81,28,0,8422.68
+15,C,Cat1,International,Late,342.4,20,0,6848.0
+15,C,Cat2,Local,Early,149.72,241,0,36082.52
+15,C,Cat2,Local,Mid,170.91,278,0,47512.98
+15,C,Cat2,Local,Late,244.4,108,0,26395.2
+15,C,Cat2,Domestic travel,Early,177.43,86,0,15258.98
+15,C,Cat2,Domestic travel,Mid,180.0,152,0,27360.0
+15,C,Cat2,Domestic travel,Late,195.12,113,0,22048.56
+15,C,Cat2,International,Early,173.86,71,0,12344.06
+15,C,Cat2,International,Mid,150.61,112,0,16868.32
+15,C,Cat2,International,Late,180.57,86,0,15529.02
+15,C,Cat3,Local,Early,74.54,589,0,43904.06
+15,C,Cat3,Local,Mid,79.65,832,0,66268.8
+15,C,Cat3,Local,Late,117.17,298,0,34916.66
+15,C,Cat3,Domestic travel,Early,59.91,402,0,24083.82
+15,C,Cat3,Domestic travel,Mid,86.21,551,0,47501.71
+15,C,Cat3,Domestic travel,Late,73.59,430,0,31643.7
+15,C,Cat3,International,Early,71.71,190,0,13624.9
+15,C,Cat3,International,Mid,73.04,303,0,22131.12
+15,C,Cat3,International,Late,87.64,212,0,18579.68
+16,A,Cat1,Local,Early,605.63,148,0,89633.24
+16,A,Cat1,Local,Mid,739.65,153,0,113166.45
+16,A,Cat1,Local,Late,750.81,109,0,81838.29
+16,A,Cat1,Domestic travel,Early,532.81,108,0,57543.48
+16,A,Cat1,Domestic travel,Mid,696.52,107,0,74527.64
+16,A,Cat1,Domestic travel,Late,697.94,79,0,55137.26
+16,A,Cat1,International,Early,646.93,55,0,35581.15
+16,A,Cat1,International,Mid,679.77,78,0,53022.06
+16,A,Cat1,International,Late,668.01,48,0,32064.48
+16,A,Cat2,Local,Early,367.15,430,0,157874.5
+16,A,Cat2,Local,Mid,363.52,811,0,294814.72
+16,A,Cat2,Local,Late,489.24,406,0,198631.44
+16,A,Cat2,Domestic travel,Early,344.69,264,0,90998.16
+16,A,Cat2,Domestic travel,Mid,378.6,403,0,152575.8
+16,A,Cat2,Domestic travel,Late,465.69,258,0,120148.02
+16,A,Cat2,International,Early,373.57,152,0,56782.64
+16,A,Cat2,International,Mid,362.98,271,0,98367.58
+16,A,Cat2,International,Late,431.16,171,0,73728.36
+16,A,Cat3,Local,Early,133.69,1928,1,257754.32
+16,A,Cat3,Local,Mid,198.15,1490,1,295243.5
+16,A,Cat3,Local,Late,197.86,1218,1,240993.48
+16,A,Cat3,Domestic travel,Early,174.95,767,1,134186.65
+16,A,Cat3,Domestic travel,Mid,192.55,1256,1,241842.8
+16,A,Cat3,Domestic travel,Late,199.14,663,1,132029.82
+16,A,Cat3,International,Early,163.43,461,1,75341.23
+16,A,Cat3,International,Mid,164.5,748,1,123046.0
+16,A,Cat3,International,Late,170.46,464,1,79093.44
