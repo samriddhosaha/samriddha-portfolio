@@ -10,3 +10,8 @@ qa/
 docs/
 playwright.config.ts
 tsconfig.json
+scripts/
+drizzle/
+eslint.config.js
+drizzle.config.js
+.data/
