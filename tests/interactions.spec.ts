@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { ROUTES } from './routes';
+import { PAGES as ROUTES } from './routes';
 
 test.describe('home navigation', () => {
   for (const [w, h] of [[390, 844], [1440, 900]] as const) {

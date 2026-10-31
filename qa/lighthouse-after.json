@@ -1,0 +1,293 @@
+[
+  {
+    "route": "/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "1.2 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.001",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/",
+    "form": "mobile",
+    "performance": 98,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "1.4 s",
+    "CLS": "0.001",
+    "TBT": "140 ms",
+    "failed": [
+      "max-potential-fid",
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.004",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/?tab=journey",
+    "form": "mobile",
+    "performance": 96,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "1.2 s",
+    "CLS": "0",
+    "TBT": "190 ms",
+    "failed": [
+      "speed-index",
+      "max-potential-fid",
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/?tab=journey",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.004",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/?tab=stories",
+    "form": "mobile",
+    "performance": 94,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "1.3 s",
+    "CLS": "0.001",
+    "TBT": "260 ms",
+    "failed": [
+      "total-blocking-time",
+      "max-potential-fid",
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/?tab=stories",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.004",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/newsletter/why-i-label-synthetic-data/",
+    "form": "mobile",
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "2.0 s",
+    "CLS": "0",
+    "TBT": "70 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "forced-reflow-insight",
+      "lcp-discovery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/newsletter/why-i-label-synthetic-data/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.5 s",
+    "CLS": "0.001",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "forced-reflow-insight",
+      "lcp-discovery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/post/drpzbqkdwn/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "1.1 s",
+    "CLS": "0.018",
+    "TBT": "20 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/feed/post/drpzbqkdwn/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.01",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/admin/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66,
+    "agentic-browsing": 100,
+    "LCP": "1.1 s",
+    "CLS": "0.013",
+    "TBT": "20 ms",
+    "failed": [
+      "unminified-javascript",
+      "unused-css-rules",
+      "unused-javascript",
+      "is-crawlable",
+      "bf-cache",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/admin/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.009",
+    "TBT": "0 ms",
+    "failed": [
+      "unminified-javascript",
+      "unused-css-rules",
+      "unused-javascript",
+      "is-crawlable",
+      "bf-cache",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  }
+]

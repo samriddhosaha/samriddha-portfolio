@@ -29,3 +29,36 @@ The existing site was already in good shape (a prior overhaul is recorded in `au
 Full Lighthouse table: `qa/lighthouse-before.md` (local server, so network-dependent insights such as caching and document latency are not representative; run it against the Vercel preview for a field-like number).
 
 Regression suite: `npm run test:qa` (audit) and `npx playwright test` (everything). Feed routes are added to `tests/routes.ts` in Phase 3.
+
+## Phase 3 re-audit (Feed and admin added to the suite)
+
+The Feed routes (`/feed/`, four tabs, an article, a post permalink resolved at runtime, a notice page, `/admin/`) now run through the same 8-viewport audit, axe, interaction and Lighthouse checks. Everything below was found by the suite, by reading screenshots, or by review while building, and fixed before this commit.
+
+| ID | Page/Section | Viewport | Severity | Description | Screenshot | Fix status |
+|---|---|---|---|---|---|---|
+| F-01 | /feed/ story bar, Stories tab tiles | 390, 1440 | Medium | axe `label-content-name-mismatch`: `aria-label` did not contain the visible text (the avatar letter, the tile text). | `qa/screenshots/feed-390.png` | Fixed: no `aria-label`; name comes from content plus hidden "stories, N items" text. |
+| F-02 | /feed/post/:id/ pinned label | 1440 | Medium | axe `color-contrast`: vermilion "Pinned" on the highlighted card background (about 4.2:1). | `qa/screenshots/post-1440.png` | Fixed: label inherits the green meta colour. |
+| F-03 | /admin/ | all | Low | Anonymous visit logged a 401 for the session probe (console error + failed request). | `qa/screenshots/admin-1440.png` | Fixed: `GET /api/admin/me/` returns 200 `{authenticated}`. |
+| F-04 | /admin/ | 320 | Medium | Layout shift 0.194 when "Loading…" was replaced by the login form. | `qa/screenshots/admin-320.png` | Fixed: container reserves `min-height: 70vh`. |
+| F-05 | Admin composer | 1280 | Medium | `[hidden]` was overridden by `.field{display:grid}`, so Title, URL slug and Update type showed for every type. Found by looking at the screenshot. | `qa/screenshots/zz-admin-1280.png` | Fixed: global `[hidden]{display:none !important}`. |
+| F-06 | /feed/ tabs | 390 | Low | "Newsletter" tab clipped inside a horizontal scroller. | `qa/screenshots/feed_tab_journey-390.png` | Fixed: tabs wrap in a grid. |
+| F-07 | Admin app | all | High | `h()` DOM helper did not accept arrays of children, so the admin crashed after login (caught by the e2e login test). | n/a | Fixed. |
+| F-08 | Admin login | n/a | Medium | The login rate limiter counted successful logins, so the owner could lock themselves out after 10 sign-ins in 15 minutes. | n/a | Fixed: success resets the counter; only failures accumulate. |
+| F-09 | /admin/ | all | Info | Lighthouse SEO 66 (`is-crawlable`). | n/a | By design: the admin is `noindex` and disallowed in `robots.txt`. |
+| F-10 | /feed/ Stories tab | mobile | Low | Lighthouse performance 94 (others 96 to 100): seeded sample images are the unscaled static WebP/SVG from the project pages. | n/a | Accepted: images uploaded through Cloudinary are served resized with `srcset`. |
+
+### Lighthouse after (local server, mobile + desktop)
+
+`qa/lighthouse-after.md`. Accessibility, best practices and SEO are 100 on every page except `/admin/` SEO (F-09). Performance is 94 to 100; LCP 1.1 to 2.0 s on mobile emulation; CLS at most 0.018.
+
+| Page | Mobile perf | Desktop perf |
+|---|---|---|
+| `/` (with feed teaser) | 100 | 100 |
+| `/feed/` | 98 | 100 |
+| `/feed/?tab=journey` | 96 | 100 |
+| `/feed/?tab=stories` | 94 | 100 |
+| `/feed/newsletter/why-i-label-synthetic-data/` | 99 | 100 |
+| `/feed/post/:id/` | 100 | 100 |
+| `/admin/` | 100 | 100 |
+
+Final suite state: 158 Playwright tests (audit: 15 routes including the 404 page x 8 viewports = 120; interactions 12; Feed e2e 26) and 30 unit tests pass; lint and type-check are clean.

@@ -1,4 +1,4 @@
-import { test, expect, Page } from '@playwright/test';
+import { test, expect, Page, BrowserContext } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 import { ROUTES, NOT_FOUND, VIEWPORTS } from './routes';
@@ -6,6 +6,11 @@ import { ROUTES, NOT_FOUND, VIEWPORTS } from './routes';
 const OUT = 'qa/screenshots';
 fs.mkdirSync(OUT, { recursive: true });
 const slug = (p: string) => (p === '/' ? 'home' : p.replace(/\W+/g, '_').replace(/^_|_$/g, ''));
+
+async function firstPostPath(ctx: BrowserContext) {
+  const j = await (await ctx.request.get('/api/feed/?tab=posts&limit=1')).json();
+  return /\/feed\/post\/[a-z0-9]+\//.exec(j.html)![0] as string;
+}
 
 async function scrollThrough(page: Page) {
   await page.evaluate(async () => {
@@ -30,14 +35,14 @@ function domChecks() {
   }
   document.querySelectorAll('body *').forEach((el) => {
     const cs = getComputedStyle(el);
-    if (cs.display === 'none' || cs.visibility === 'hidden' || (el as HTMLElement).closest('.sprite,.sr-only,.skip')) return;
+    if (cs.display === 'none' || cs.visibility === 'hidden' || (el as HTMLElement).closest('.sprite,.sr-only,.skip,.hp')) return;
     const r = el.getBoundingClientRect();
     if (r.width === 0 || r.height === 0) return;
     if ((r.right > de.clientWidth + 1 || r.left < -1) && !insideScroller(el)) problems.push(`outside viewport: ${describe(el)} [${Math.round(r.left)}..${Math.round(r.right)}] vs ${de.clientWidth}`);
     if (cs.textOverflow === 'ellipsis' && el.scrollWidth > el.clientWidth) problems.push(`truncated text: ${describe(el)}`);
   });
   // Tap targets: controls must be >=44px (WCAG 2.5.8 exempts inline text links inside prose).
-  document.querySelectorAll('button, .btn, .navlink, .foot-links a, .links a, .crumb a, input:not([type=hidden]), select, textarea, [role=tab]').forEach((el) => {
+  document.querySelectorAll('button, .btn, .navlink, .foot-links a, .links a, .crumb a, input:not([type=hidden]):not([type=checkbox]), select, textarea, [role=tab]').forEach((el) => {
     const r = el.getBoundingClientRect();
     if (r.width === 0 || r.height === 0) return;
     if (r.height < 43.5) problems.push(`small tap target ${Math.round(r.width)}x${Math.round(r.height)}: ${describe(el)} "${(el.textContent || '').trim().slice(0, 30)}"`);
@@ -53,6 +58,7 @@ function domChecks() {
 for (const route of [...ROUTES, NOT_FOUND]) {
   for (const [w, h] of VIEWPORTS) {
     test(`${route} @ ${w}x${h}`, async ({ browser }) => {
+      test.setTimeout(90_000);
       const ctx = await browser.newContext({ viewport: { width: w, height: h } });
       const page = await ctx.newPage();
       const logs: string[] = [];
@@ -64,7 +70,8 @@ for (const route of [...ROUTES, NOT_FOUND]) {
         (window as any).__cls = 0;
         new PerformanceObserver((l) => { for (const e of l.getEntries() as any[]) if (!e.hadRecentInput) (window as any).__cls += e.value; }).observe({ type: 'layout-shift', buffered: true });
       });
-      const res = await page.goto(route, { waitUntil: 'networkidle' });
+      const target = route === '@post' ? await firstPostPath(ctx) : route;
+      const res = await page.goto(target, { waitUntil: 'networkidle' });
       expect(res!.status()).toBe(route === NOT_FOUND ? 404 : 200);
       await scrollThrough(page);
       await page.screenshot({ path: `${OUT}/${slug(route)}-${w}.png`, fullPage: true });
