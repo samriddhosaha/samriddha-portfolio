@@ -1,6 +1,36 @@
-# Samriddha Saha — portfolio
+# Samriddha Saha: Portfolio
 
-A static one-page portfolio plus four proof pages (plain HTML, CSS and vanilla JS, no framework, no bundler, no trackers), and a **Feed** at `/feed/` (posts, stories, newsletter, journey timeline) with an owner-only admin at `/admin/`. The Feed is server-rendered by one Vercel Function; the static pages stay dependency-free. Hosted on Vercel at https://samriddha-portfolio.vercel.app.
+**Live site: https://samriddha-portfolio.vercel.app**
+
+The personal portfolio of Samriddha Saha, a Senior Business Analyst based in Hyderabad, India, working in revenue forecasting, pricing analytics, Power BI dashboards and data warehousing (SQL, Python, Power BI). The site is written for recruiters, hiring managers and prospective clients. It shows what the work looks like, with real figures and code behind each claim, rather than only listing skills.
+
+## What the site contains
+
+- **Home:** a short introduction, headline results, selected projects, professional experience, technical skills, education and certifications, a preview of the latest Feed items, and contact details.
+- **Case studies** (`/work/`): four project write-ups, each with a business question, data, approach, key findings, limitations and next steps, plus links to the code or live report.
+  - *Event ticket demand and pricing:* a synthetic 16-match event covering demand segmentation, price-sensitivity estimation and a held-out forecast (8% cell-level error). It is labelled synthetic everywhere and is not client work.
+  - *Ola ride cancellation analysis:* a five-page Power BI report on July 2024 bookings, where 28% of 103,024 bookings were cancelled.
+  - *Data warehouse (ERP and CRM to a star schema):* a bronze, silver and gold SQL Server warehouse built with ETL stored procedures.
+  - *Data job market analysis, India:* a pandas and Matplotlib analysis of a public 2023 job-postings dataset.
+- **Feed** (`/feed/`): a personal publishing space with short posts and threads, stories and highlights, a newsletter with email subscription, and a timeline of professional updates. It supports search, tag filters, reactions, moderated comments, RSS and shareable permalinks. Only the owner can publish, through a private admin at `/admin/`.
+
+Client work is not shown. Where a figure comes from synthetic data, the page says so.
+
+## How it is built
+
+Plain HTML, CSS and vanilla JavaScript for the main site: no framework, no bundler, no trackers, self-hosted fonts and a strict Content-Security-Policy. The Feed is rendered on the server by a single Vercel Function, backed by Turso (SQLite) and Drizzle, with Cloudinary for media and Resend for email. The site targets Lighthouse scores of 90 or more in every category, passes automated accessibility checks (WCAG 2.2 AA) and is tested across screen widths from 320 to 1920 px. Design decisions and measurements are in [`docs/`](docs/).
+
+## Contact
+
+LinkedIn: https://www.linkedin.com/in/samriddha-saha-12375a1a0/ · GitHub: https://github.com/samriddhosaha/ · Email address is on the live site.
+
+---
+
+# Developer guide
+
+The rest of this file is for anyone running or maintaining the repository.
+
+The static pages stay dependency-free. Hosted on Vercel.
 
 ## Structure
 
