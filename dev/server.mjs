@@ -64,7 +64,13 @@ http.createServer(async (req, res) => {
     const extra = {};
     for (const r of headerRules) if (r.re.test(p)) for (const h of r.headers) extra[h.key.toLowerCase()] = h.value;
 
-    // /api/* is a function whether or not a rewrite exists
+    // trailingSlash: true -> redirect /work/x to /work/x/ (extension-less paths only)
+    if (cfg.trailingSlash && !p.endsWith('/') && !path.extname(p)) {
+      res.writeHead(308, { location: p + '/' + url.search });
+      return res.end();
+    }
+
+    // Rewrites (same rules as vercel.json) send dynamic routes to the single router function
     for (const r of rewriteRules) {
       const m = r.re.exec(p) || (!p.endsWith('/') && r.re.exec(p + '/'));
       if (!m) continue;
@@ -76,11 +82,6 @@ http.createServer(async (req, res) => {
     }
     if (/^\/api\/[^/]+$/.test(p) && fs.existsSync(path.join(root, p + '.js'))) return await runApi(req, res, p + url.search, extra);
 
-    // trailingSlash: true -> redirect /work/x to /work/x/ (extension-less paths only)
-    if (cfg.trailingSlash && !p.endsWith('/') && !path.extname(p)) {
-      res.writeHead(308, { location: p + '/' + url.search });
-      return res.end();
-    }
     const clean = p.replace(/\/$/, '') || '/index';
     const f = hidden.test(p) ? null : fileFor(clean === '/index' ? '/index.html' : clean);
     if (!f) {
