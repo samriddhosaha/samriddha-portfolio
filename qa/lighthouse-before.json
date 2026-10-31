@@ -1,0 +1,197 @@
+[
+  {
+    "route": "/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "1.0 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "failed": [
+      "max-potential-fid",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.001",
+    "TBT": "0 ms",
+    "failed": [
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/event-pricing/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.9 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "failed": [
+      "max-potential-fid",
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/event-pricing/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.2 s",
+    "CLS": "0.001",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/ola-cancellations/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.9 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/ola-cancellations/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.3 s",
+    "CLS": "0.001",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/data-warehouse/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.9 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/data-warehouse/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.2 s",
+    "CLS": "0.001",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/job-market/",
+    "form": "mobile",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.9 s",
+    "CLS": "0",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "image-delivery-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  },
+  {
+    "route": "/work/job-market/",
+    "form": "desktop",
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100,
+    "agentic-browsing": 100,
+    "LCP": "0.2 s",
+    "CLS": "0.001",
+    "TBT": "0 ms",
+    "failed": [
+      "unused-css-rules",
+      "cache-insight",
+      "document-latency-insight",
+      "network-dependency-tree-insight",
+      "render-blocking-insight"
+    ]
+  }
+]

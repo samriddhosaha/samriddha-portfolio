@@ -1,0 +1,25 @@
+{
+  "name": "samriddha-portfolio",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node dev/server.mjs",
+    "test:qa": "playwright test tests/audit.spec.ts",
+    "test:e2e": "playwright test tests/feed.spec.ts",
+    "test:unit": "node --test tests/unit/",
+    "test": "npm run test:unit && playwright test",
+    "lh": "node tools/lh-run.mjs",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6",
+    "chrome-launcher": "^1.2.2",
+    "lighthouse": "^13.6.0",
+    "typescript": "^7.0.2"
+  }
+}

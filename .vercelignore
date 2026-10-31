@@ -4,3 +4,9 @@ PLAN.md
 NEEDS_INPUT.md
 PR.md
 .gitignore
+dev/
+tests/
+qa/
+docs/
+playwright.config.ts
+tsconfig.json
