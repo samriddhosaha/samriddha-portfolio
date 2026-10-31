@@ -7,3 +7,10 @@ audit/src/
 claude-code-portfolio-prompt.md
 portfolio-audit-report.md
 __pycache__/
+.env
+.env.*
+!.env.example
+.data/
+qa/screenshots/
+test-results/
+playwright-report/
