@@ -49,33 +49,33 @@
     <ul id="navList">
       <li><a class="navlink" href="/#work">Work</a></li>
       <li><a class="navlink" href="/#experience">Experience</a></li>
-      <li><a class="navlink" href="/#toolkit">Toolkit</a></li>
+      <li><a class="navlink" href="/#skills">Skills</a></li>
       <li><a class="navlink" href="/#about">About</a></li>
-      <li><a class="navlink" href="/feed/">Feed</a></li>
       <li><a class="navlink" href="/#contact">Contact</a></li>
     </ul>
+    <a class="btn btn-solid nav-feed" href="/feed/">Feed</a>
   </nav>
 </header>
 <main id="main">
   <div class="case-hero">
     <div class="wrap">
       <p class="crumb"><a href="/#work">&larr; Selected work</a></p>
-      <h1>Ola ride cancellations</h1>
-      <p class="lede">A Power BI report on one month of ride bookings, built to show why rides get cancelled.</p>
+      <h1>Ola ride cancellation analysis</h1>
+      <p class="lede">A Power BI report on one month of ride bookings, designed to explain why rides are cancelled.</p>
       
       <dl class="facts"><div><dt>Type</dt><dd>Personal project</dd></div><div><dt>Tools</dt><dd>SQL, Power BI</dd></div><div><dt>Data</dt><dd>Ola bookings, July 2024</dd></div><div><dt>Built</dt><dd>Jan 2025</dd></div></dl>
     </div>
   </div>
   <div class="wrap prose">
-<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>The question</h2><div class="body"><p>Why do Ola rides get cancelled, and where could a team act to bring the cancellation rate down by 10%?</p></div></section>
-<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>The data</h2><div class="body"><p>A dataset of Ola bookings for July 2024 (1 to 31 July). I cleaned and processed data from several sources before analysis.</p>
+<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>Business question</h2><div class="body"><p>Why do Ola rides get cancelled, and where could a team act to bring the cancellation rate down by 10%?</p></div></section>
+<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>Data</h2><div class="body"><p>A dataset of Ola bookings for July 2024 (1 to 31 July). I cleaned and processed data from several sources before analysis.</p>
 <!-- TODO(owner): name the dataset source and say whether this followed a course (NEEDS_INPUT.md #8) --></div></section>
-<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>The method</h2><div class="body"><p>SQL queries produced the figures, and a five-page Power BI report presents them: Overall, Vehicle Type, Revenue, Cancellation and Ratings.</p></div></section>
-<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>What I found</h2><div class="body"><p>Of 103,024 bookings, 63,967 (62.1%) were completed. A further 28,933 were cancelled, a cancellation rate of <strong>28.08%</strong>: 17.9% of bookings cancelled by the driver and 10.2% by the customer. Another 9.8% ended with no driver found.</p>
+<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>Approach</h2><div class="body"><p>SQL queries produced the figures, and a five-page Power BI report presents them: Overall, Vehicle Type, Revenue, Cancellation and Ratings.</p></div></section>
+<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>Key findings</h2><div class="body"><p>Of 103,024 bookings, 63,967 (62.1%) were completed. A further 28,933 were cancelled, a cancellation rate of <strong>28.08%</strong>: 17.9% of bookings cancelled by the driver and 10.2% by the customer. Another 9.8% ended with no driver found.</p>
 <figure><div class="fig"><img src="/assets/img/work/ola-cancellations/cancellation-dashboard.webp" width="1262" height="705" loading="lazy" alt="Power BI cancellation page for July 2024: 103,024 total bookings, 63,967 successful, 28,933 cancelled, a cancellation rate of 28.08, and pie charts of cancellation reasons given by customers and by drivers."></div><figcaption>The Cancellation page of the Power BI report.</figcaption></figure>
 <ul><li><strong>Customers cancel mostly because of the driver.</strong> "Driver is not moving towards pickup" (30.2%) and "driver asked to cancel" (25.4%) together account for 55.7% of customer cancellations.</li>
 <li><strong>Drivers cancel mostly for their own reasons.</strong> Personal and car-related issues are 35.5% of driver cancellations; customer-related issues are 29.4%.</li></ul></div></section>
-<section aria-labelledby="what-id-do-next"><h2 id="what-id-do-next"><span class="section-num">05</span>What I'd do next</h2><div class="body"><p>The 10% reduction is a target I set, not a forecast, and the project does not estimate how much a given change would move it. The next step is to size the opportunity from the dashboard's own numbers.</p>
+<section aria-labelledby="what-id-do-next"><h2 id="what-id-do-next"><span class="section-num">05</span>Next steps</h2><div class="body"><p>The 10% reduction is a target I set, not a forecast, and the project does not estimate how much a given change would move it. The next step is to size the opportunity from the dashboard's own numbers.</p>
 <p>As arithmetic only: about 10,500 bookings were cancelled by customers, and 55.7% of those (about 5,850) cite driver behaviour at pickup. Halving that group would remove about 2,900 cancellations and move the rate from 28.1% to about 25.3%, a 10% relative drop. Whether such a change is achievable is a question for the operations team and the data cannot answer it.</p>
 <p>I would also check how the cancellation definition treats the "driver not found" bookings, which sit outside the 28.08%.</p></div></section>
 <section aria-labelledby="links"><h2 id="links"><span class="section-num">06</span>Links</h2><div class="body"><ul><li><a href="https://app.powerbi.com/links/5hiYQrtHJt?ctid=36da45f1-dd2c-4d1f-af13-5abe46b99921&amp;pbi_source=linkShare" target="_blank" rel="noopener">Live Power BI dashboard <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li>

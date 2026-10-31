@@ -20,7 +20,7 @@ const section = (page: Page, name: RegExp) => page.locator('.admin-tabs').getByR
 test.describe('public feed', () => {
   test('shows seeded content, tabs, tag filter, search and load more', async ({ page }) => {
     await page.goto('/feed/');
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('Notes from the');
+    await expect(page.getByRole('heading', { level: 1 })).toContainText('Notes, writing and');
     await expect(page.locator('.feed-card').first()).toContainText('Welcome to my feed'); // pinned first
     await expect(page.locator('.feed-card.kind-article').first()).toBeVisible();
 
@@ -39,13 +39,13 @@ test.describe('public feed', () => {
     for (const t of await page.locator('.feed-card .feed-tags').allTextContents()) expect(t).toContain('#forecasting');
 
     await page.goto('/feed/');
-    await page.getByLabel('Search the feed').fill('medallion');
+    await page.getByLabel('Search the Feed').fill('medallion');
     await page.getByRole('button', { name: 'Search' }).click();
     await expect(page).toHaveURL(/q=medallion/);
     await expect(page.locator('.feed-card, .tl-item').first()).toContainText(/medallion/i);
-    await page.getByLabel('Search the feed').fill('zzzz-no-such-thing');
+    await page.getByLabel('Search the Feed').fill('zzzz-no-such-thing');
     await page.getByRole('button', { name: 'Search' }).click();
-    await expect(page.locator('.empty')).toContainText('Nothing matches');
+    await expect(page.locator('.empty')).toContainText('No results found');
   });
 
   test('load more appends items without a page reload', async ({ page }) => {
@@ -269,7 +269,7 @@ test.describe('admin', () => {
     await page.goto('/admin/');
     await page.getByLabel('Password').fill('nope');
     await page.getByRole('button', { name: 'Sign in' }).click();
-    await expect(page.locator('#login-status')).toHaveText('Wrong password.');
+    await expect(page.locator('#login-status')).toHaveText('Incorrect password.');
     await login(page);
     const cookie = (await page.context().cookies()).find((c) => c.name === 'sid')!;
     expect(cookie.httpOnly).toBe(true);

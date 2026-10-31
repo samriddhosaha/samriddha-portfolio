@@ -6,7 +6,7 @@ test.describe('home navigation', () => {
     test(`anchor links land below the sticky header @ ${w}`, async ({ browser }) => {
       const page = await (await browser.newContext({ viewport: { width: w, height: h } })).newPage();
       await page.goto('/', { waitUntil: 'networkidle' });
-      for (const id of ['work', 'experience', 'toolkit', 'about', 'contact']) {
+      for (const id of ['work', 'experience', 'skills', 'about', 'contact']) {
         if (w < 820) await page.click('#navToggle');
         await page.click(`#navList a[href="/#${id}"]`);
         await page.waitForTimeout(900); // smooth scroll

@@ -5,7 +5,7 @@ A static one-page portfolio plus four proof pages (plain HTML, CSS and vanilla J
 ## Structure
 
 ```
-index.html                 home: hero, work, experience, toolkit, about, feed teaser, contact
+index.html                 home: hero, work, experience, skills, about, feed teaser, contact
 work/<slug>/index.html     proof pages: event-pricing, ola-cancellations, data-warehouse, job-market
 assets/css/site.css        the site stylesheet (nojs.css loads only when JavaScript is off)
 assets/css/feed.css        Feed + admin styles (same design tokens)

@@ -35,7 +35,7 @@
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       api('POST', '/api/admin/login/', { password: $('#pw').value }).then(function (r) {
-        if (r.ok) start(); else { var s = $('#login-status'); s.className = 'sub-status bad'; s.textContent = r.status === 429 ? 'Too many attempts. Try again later.' : 'Wrong password.'; }
+        if (r.ok) start(); else { var s = $('#login-status'); s.className = 'sub-status bad'; s.textContent = r.status === 429 ? 'Too many attempts. Try again later.' : 'Incorrect password.'; }
       });
     });
     root.appendChild(h('div', { class: 'narrow-form' }, form));

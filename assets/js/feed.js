@@ -119,7 +119,7 @@
         var ul = document.createElement('ul'); ul.className = 'teaser'; ul.innerHTML = d.html;
         list.replaceWith(ul);
       })
-      .catch(function () { list.outerHTML = '<p class="err-inline" role="alert">The latest items could not be loaded. <a href="/feed/">Open the feed</a>.</p>'; });
+      .catch(function () { list.outerHTML = '<p class="err-inline" role="alert">The latest items could not be loaded. <a href="/feed/">Open the Feed</a>.</p>'; });
   }
 
   init(document);

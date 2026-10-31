@@ -49,11 +49,11 @@
     <ul id="navList">
       <li><a class="navlink" href="/#work">Work</a></li>
       <li><a class="navlink" href="/#experience">Experience</a></li>
-      <li><a class="navlink" href="/#toolkit">Toolkit</a></li>
+      <li><a class="navlink" href="/#skills">Skills</a></li>
       <li><a class="navlink" href="/#about">About</a></li>
-      <li><a class="navlink" href="/feed/">Feed</a></li>
       <li><a class="navlink" href="/#contact">Contact</a></li>
     </ul>
+    <a class="btn btn-solid nav-feed" href="/feed/">Feed</a>
   </nav>
 </header>
 <main id="main">
@@ -67,17 +67,17 @@
     </div>
   </div>
   <div class="wrap prose">
-<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>The question</h2><div class="body"><p>Two source systems, a CRM and an ERP, export raw files in different shapes. How do you combine them into one clean model that analysts can query?</p></div></section>
-<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>The data</h2><div class="body"><p>Six CSV files: three from the CRM (customer info, product info, sales details) and three from the ERP (customer, location and product-category tables). The scope is the latest data only; history is not tracked.</p></div></section>
-<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>The method</h2><div class="body"><p>A medallion architecture in SQL Server, built in three layers.</p>
+<section aria-labelledby="the-question"><h2 id="the-question"><span class="section-num">01</span>Business question</h2><div class="body"><p>Two source systems, a CRM and an ERP, export raw files in different shapes. How do you combine them into one clean model that analysts can query?</p></div></section>
+<section aria-labelledby="the-data"><h2 id="the-data"><span class="section-num">02</span>Data</h2><div class="body"><p>Six CSV files: three from the CRM (customer info, product info, sales details) and three from the ERP (customer, location and product-category tables). The scope is the latest data only; history is not tracked.</p></div></section>
+<section aria-labelledby="the-method"><h2 id="the-method"><span class="section-num">03</span>Approach</h2><div class="body"><p>A medallion architecture in SQL Server, built in three layers.</p>
 <figure><div class="fig"><img src="/assets/img/work/data-warehouse/layers.svg" width="800" height="420" loading="lazy" alt="Diagram: six CSV files flow into a bronze layer, then silver, then a gold star schema."></div><figcaption>The three layers, redrawn from the project README.</figcaption></figure>
 <ul><li><strong>Bronze</strong>: raw files loaded as they arrive, by a stored procedure.</li>
 <li><strong>Silver</strong>: cleansing and standardisation of both sources, also by stored procedure.</li>
 <li><strong>Gold</strong>: business-ready views in a star schema: <code>dim_customers</code>, <code>dim_products</code> and <code>fact_sales</code>.</li></ul>
 <p>The repo also holds a column-level data catalog for the gold layer and a set of naming conventions.</p></div></section>
-<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>What I found</h2><div class="body"><p>This project is about building the model, not about a business finding. What it delivers is a single place where CRM and ERP data meet: one customer dimension, one product dimension and one sales fact table, documented well enough for someone else to query.</p>
+<section aria-labelledby="what-i-found"><h2 id="what-i-found"><span class="section-num">04</span>Key findings</h2><div class="body"><p>This project is about building the model, not about a business finding. What it delivers is a single place where CRM and ERP data meet: one customer dimension, one product dimension and one sales fact table, documented well enough for someone else to query.</p>
 <!-- TODO(owner): add what you changed or extended, and any data-quality issues you found and fixed (NEEDS_INPUT.md #8) --></div></section>
-<section aria-labelledby="what-id-do-next"><h2 id="what-id-do-next"><span class="section-num">05</span>What I'd do next</h2><div class="body"><ul><li>Add automated checks that row counts and totals reconcile between layers.</li><li>Keep history, for example slowly changing customer attributes, rather than only the latest snapshot.</li><li>Build a Power BI report on the gold layer for customer behaviour, product performance and sales trends.</li></ul></div></section>
+<section aria-labelledby="what-id-do-next"><h2 id="what-id-do-next"><span class="section-num">05</span>Next steps</h2><div class="body"><ul><li>Add automated checks that row counts and totals reconcile between layers.</li><li>Keep history, for example slowly changing customer attributes, rather than only the latest snapshot.</li><li>Build a Power BI report on the gold layer for customer behaviour, product performance and sales trends.</li></ul></div></section>
 <section aria-labelledby="links"><h2 id="links"><span class="section-num">06</span>Links</h2><div class="body"><ul><li><a href="https://github.com/samriddhosaha/SQL-PortfolioProjects/tree/main/Data-Warehouse-Project" target="_blank" rel="noopener">Scripts, data catalog and docs on GitHub <svg class="i" aria-hidden="true"><use href="#i-ext"/></svg><span class="sr-only">(opens in new tab)</span></a></li></ul>
 <p>Last updated 6 Oct 2026.</p></div></section>
   </div>
