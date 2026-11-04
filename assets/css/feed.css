@@ -30,8 +30,8 @@ label{font-weight:600;font-size:0.95rem;}
 .tag-chips .tag{min-height:44px;padding:0 12px;}
 .feed-tags{margin-top:12px;}
 .feed-tags .tag{min-height:36px;padding:0 10px;}
-.tag:hover{background:var(--paper-2);}
-.tag.on{background:var(--ink);color:var(--paper);}
+.tag-chips .tag:hover,.feed-tags .tag:hover{background:var(--paper-2);}
+.tag-chips .tag.on{background:var(--ink);color:var(--paper);}
 .active-filter{font-family:var(--mono);font-size:0.85rem;margin:0 0 20px;}
 
 /* stories */
@@ -119,7 +119,7 @@ code{font-family:var(--mono);font-size:0.88em;background:var(--paper-2);padding:
 .share{display:inline-flex;gap:4px;}
 
 /* journey */
-.timeline{list-style:none;margin:0 0 0 8px;padding:0;border-left:2px solid var(--ink);}
+.feed-timeline{list-style:none;margin:0 0 0 8px;padding:0;border-left:2px solid var(--ink);}
 .tl-year{padding:4px 0 18px 28px;position:relative;}
 .tl-year h2{font-size:2rem;margin:0;}
 .tl-item{position:relative;padding:0 0 32px 28px;}
