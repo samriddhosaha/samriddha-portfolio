@@ -48,15 +48,51 @@
   ],
   "rewrites": [
     {
+      "source": "/api",
+      "destination": "/api/r?__p=api"
+    },
+    {
+      "source": "/api/",
+      "destination": "/api/r?__p=api"
+    },
+    {
       "source": "/api/:path*",
       "destination": "/api/r?__p=api/:path*"
+    },
+    {
+      "source": "/api/:path*/",
+      "destination": "/api/r?__p=api/:path*"
+    },
+    {
+      "source": "/feed",
+      "destination": "/api/r?__p=feed"
+    },
+    {
+      "source": "/feed/",
+      "destination": "/api/r?__p=feed"
     },
     {
       "source": "/feed/:path*",
       "destination": "/api/r?__p=feed/:path*"
     },
     {
+      "source": "/feed/:path*/",
+      "destination": "/api/r?__p=feed/:path*"
+    },
+    {
+      "source": "/admin",
+      "destination": "/api/r?__p=admin"
+    },
+    {
+      "source": "/admin/",
+      "destination": "/api/r?__p=admin"
+    },
+    {
       "source": "/admin/:path*",
+      "destination": "/api/r?__p=admin/:path*"
+    },
+    {
+      "source": "/admin/:path*/",
       "destination": "/api/r?__p=admin/:path*"
     }
   ]

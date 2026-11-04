@@ -156,10 +156,11 @@ test.describe('public feed', () => {
     await expect(page.getByRole('link', { name: 'Feed', exact: true }).first()).toHaveAttribute('href', '/feed/');
   });
 
-  test('home teaser shows an error state when the API fails', async ({ page }) => {
+  test('home teaser hides itself when the API fails', async ({ page }) => {
     await page.route('**/api/feed/**', (r) => r.fulfill({ status: 500, body: '{}' }));
     await page.goto('/');
-    await expect(page.locator('#feed .err-inline')).toBeVisible();
+    await expect(page.locator('#feed')).toBeHidden();
+    await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   });
 });
 
