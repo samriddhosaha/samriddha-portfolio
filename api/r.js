@@ -9,8 +9,7 @@ async function handle(request) {
   } catch (e) {
     loaded = undefined;
     console.error('feed function failed to load', e);
-    // ponytail: message is shown while the deployment is being verified; drop it once /feed/ is confirmed healthy.
-    return new Response(`Feed temporarily unavailable (${e.code || e.name}: ${String(e.message).split('\n')[0].slice(0, 200)})`, { status: 503, headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' } });
+    return new Response('Feed temporarily unavailable.', { status: 503, headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' } });
   }
 }
 
